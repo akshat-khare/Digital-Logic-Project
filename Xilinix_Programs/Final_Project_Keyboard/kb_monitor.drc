@@ -1,0 +1,8 @@
+Release 14.1 Drc P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Aug 07 21:51:54 2012
+
+drc -z kb_monitor.ncd kb_monitor.pcf
+
+DRC detected 0 errors and 0 warnings.

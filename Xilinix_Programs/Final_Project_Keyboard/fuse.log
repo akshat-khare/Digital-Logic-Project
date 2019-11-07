@@ -1,0 +1,19 @@
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Keyboard Projects/Final_Project_Keyboard_Working/Keyboard_TF_isim_beh.exe -prj E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Keyboard Projects/Final_Project_Keyboard_Working/Keyboard_TF_beh.prj work.Keyboard_TF work.glbl 
+ISim P.15xf (signature 0x2f00eba5)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Keyboard Projects/Final_Project_Keyboard_Working/Keyboard_TF.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 64764 KB
+Fuse CPU Usage: 531 ms
+Compiling module Keyboard_TF
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 2 Verilog Units
+Built simulation executable E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Keyboard Projects/Final_Project_Keyboard_Working/Keyboard_TF_isim_beh.exe
+Fuse Memory Usage: 70272 KB
+Fuse CPU Usage: 687 ms

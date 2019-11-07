@@ -1,0 +1,28 @@
+Command line:
+   Mouse_TF_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1062
+
+Wed Aug 08 16:58:51 2012
+
+
+ Elaboration Time: 0.25 sec
+
+ Current Memory Usage: 331.162 Meg
+
+ Total Signals          : 13
+ Total Nets             : 13
+ Total Signal Drivers   : 5
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 161
+
+ Total Simulation Time: 0.25 sec
+
+ Current Memory Usage: 332.21 Meg
+
+Wed Aug 08 17:00:14 2012
+

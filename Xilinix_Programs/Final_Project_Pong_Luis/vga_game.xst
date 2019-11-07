@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/xst"
+elaborate
+-ifn vga_game.prj
+-ifmt mixed

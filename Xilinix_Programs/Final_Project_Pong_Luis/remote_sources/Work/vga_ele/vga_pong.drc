@@ -1,0 +1,8 @@
+Release 13.1 Drc O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Tue Aug 07 18:50:56 2012
+
+drc -z vga_pong.ncd vga_pong.pcf
+
+DRC detected 0 errors and 0 warnings.

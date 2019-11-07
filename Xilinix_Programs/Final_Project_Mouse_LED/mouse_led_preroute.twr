@@ -1,0 +1,648 @@
+--------------------------------------------------------------------------------
+Release 14.1 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.1\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml mouse_led_preroute.twx mouse_led_map.ncd -o
+mouse_led_preroute.twr mouse_led.pcf -ucf Mouse_UCF.ucf
+
+Design file:              mouse_led_map.ncd
+Physical constraint file: mouse_led.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2012-04-23)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1134 paths analyzed, 321 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.118ns.
+--------------------------------------------------------------------------------
+
+Paths for end point mouse_unit/ps2_unit/ps2_tx_unit/c_reg_11 (SLICEL.F4), 12 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     15.882ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mouse_unit/ps2_unit/ps2_tx_unit/c_reg_0 (FF)
+  Destination:          mouse_unit/ps2_unit/ps2_tx_unit/c_reg_11 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.118ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mouse_unit/ps2_unit/ps2_tx_unit/c_reg_0 to mouse_unit/ps2_unit/ps2_tx_unit/c_reg_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.YQ            Tcko                  0.511   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<1>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg_0
+    SLICEL.F1            net (fanout=3)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<0>
+    SLICEL.COUT          Topcyf                1.011   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<0>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg<0>_rt
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<0>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<1>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<1>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<3>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<3>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<4>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<4>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<5>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<5>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<6>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<6>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<7>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<7>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<8>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<8>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<9>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<9>
+    SLICEL.Y             Tciny                 0.756   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<10>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<10>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_xor<11>
+    SLICEL.F4            net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<11>
+    SLICEL.CLK           Tfck                  0.728   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<11>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_next<11>1
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg_11
+    -------------------------------------------------  ---------------------------
+    Total                                      4.118ns (3.418ns logic, 0.700ns route)
+                                                       (83.0% logic, 17.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     16.019ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mouse_unit/ps2_unit/ps2_tx_unit/c_reg_1 (FF)
+  Destination:          mouse_unit/ps2_unit/ps2_tx_unit/c_reg_11 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.981ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mouse_unit/ps2_unit/ps2_tx_unit/c_reg_1 to mouse_unit/ps2_unit/ps2_tx_unit/c_reg_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.514   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<1>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg_1
+    SLICEL.G1            net (fanout=3)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<1>
+    SLICEL.COUT          Topcyg                0.871   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<0>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_lut<1>_INV_0
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<1>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<1>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<3>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<3>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<4>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<4>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<5>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<5>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<6>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<6>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<7>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<7>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<8>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<8>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<9>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<9>
+    SLICEL.Y             Tciny                 0.756   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<10>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<10>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_xor<11>
+    SLICEL.F4            net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<11>
+    SLICEL.CLK           Tfck                  0.728   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<11>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_next<11>1
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg_11
+    -------------------------------------------------  ---------------------------
+    Total                                      3.981ns (3.281ns logic, 0.700ns route)
+                                                       (82.4% logic, 17.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     16.082ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mouse_unit/ps2_unit/ps2_tx_unit/c_reg_2 (FF)
+  Destination:          mouse_unit/ps2_unit/ps2_tx_unit/c_reg_11 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.918ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mouse_unit/ps2_unit/ps2_tx_unit/c_reg_2 to mouse_unit/ps2_unit/ps2_tx_unit/c_reg_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.514   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg_2
+    SLICEL.F1            net (fanout=3)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<2>
+    SLICEL.COUT          Topcyf                1.011   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_lut<2>_INV_0
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<3>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<3>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<4>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<4>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<5>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<5>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<6>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<6>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<7>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<7>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<8>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<8>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<9>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<9>
+    SLICEL.Y             Tciny                 0.756   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<10>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<10>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_xor<11>
+    SLICEL.F4            net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<11>
+    SLICEL.CLK           Tfck                  0.728   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<11>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_next<11>1
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg_11
+    -------------------------------------------------  ---------------------------
+    Total                                      3.918ns (3.318ns logic, 0.600ns route)
+                                                       (84.7% logic, 15.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point mouse_unit/ps2_unit/ps2_tx_unit/c_reg_12 (SLICEL.F4), 13 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     16.033ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mouse_unit/ps2_unit/ps2_tx_unit/c_reg_0 (FF)
+  Destination:          mouse_unit/ps2_unit/ps2_tx_unit/c_reg_12 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.967ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mouse_unit/ps2_unit/ps2_tx_unit/c_reg_0 to mouse_unit/ps2_unit/ps2_tx_unit/c_reg_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.YQ            Tcko                  0.511   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<1>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg_0
+    SLICEL.F1            net (fanout=3)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<0>
+    SLICEL.COUT          Topcyf                1.011   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<0>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg<0>_rt
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<0>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<1>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<1>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<3>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<3>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<4>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<4>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<5>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<5>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<6>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<6>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<7>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<7>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<8>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<8>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<9>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<9>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<10>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<10>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<11>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<11>
+    SLICEL.X             Tcinx                 0.402   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<12>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_xor<12>
+    SLICEL.F4            net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<12>
+    SLICEL.CLK           Tfck                  0.728   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<12>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_next<12>1
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg_12
+    -------------------------------------------------  ---------------------------
+    Total                                      3.967ns (3.167ns logic, 0.800ns route)
+                                                       (79.8% logic, 20.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     16.170ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mouse_unit/ps2_unit/ps2_tx_unit/c_reg_1 (FF)
+  Destination:          mouse_unit/ps2_unit/ps2_tx_unit/c_reg_12 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.830ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mouse_unit/ps2_unit/ps2_tx_unit/c_reg_1 to mouse_unit/ps2_unit/ps2_tx_unit/c_reg_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.514   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<1>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg_1
+    SLICEL.G1            net (fanout=3)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<1>
+    SLICEL.COUT          Topcyg                0.871   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<0>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_lut<1>_INV_0
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<1>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<1>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<3>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<3>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<4>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<4>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<5>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<5>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<6>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<6>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<7>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<7>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<8>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<8>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<9>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<9>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<10>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<10>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<11>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<11>
+    SLICEL.X             Tcinx                 0.402   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<12>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_xor<12>
+    SLICEL.F4            net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<12>
+    SLICEL.CLK           Tfck                  0.728   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<12>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_next<12>1
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg_12
+    -------------------------------------------------  ---------------------------
+    Total                                      3.830ns (3.030ns logic, 0.800ns route)
+                                                       (79.1% logic, 20.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     16.233ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mouse_unit/ps2_unit/ps2_tx_unit/c_reg_2 (FF)
+  Destination:          mouse_unit/ps2_unit/ps2_tx_unit/c_reg_12 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.767ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mouse_unit/ps2_unit/ps2_tx_unit/c_reg_2 to mouse_unit/ps2_unit/ps2_tx_unit/c_reg_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.514   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg_2
+    SLICEL.F1            net (fanout=3)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<2>
+    SLICEL.COUT          Topcyf                1.011   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_lut<2>_INV_0
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<2>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<3>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<3>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<4>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<4>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<5>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<5>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<6>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<6>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<7>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<7>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<8>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<8>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<9>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<9>
+    SLICEL.COUT          Tbyp                  0.103   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<10>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<10>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<11>
+    SLICEL.CIN           net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_cy<11>
+    SLICEL.X             Tcinx                 0.402   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<12>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/Msub_c_next_addsub0000_xor<12>
+    SLICEL.F4            net (fanout=1)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/c_next_addsub0000<12>
+    SLICEL.CLK           Tfck                  0.728   mouse_unit/ps2_unit/ps2_tx_unit/c_reg<12>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_next<12>1
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/c_reg_12
+    -------------------------------------------------  ---------------------------
+    Total                                      3.767ns (3.067ns logic, 0.700ns route)
+                                                       (81.4% logic, 18.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point p_reg_9 (SLICEL.F4), 29 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     16.082ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               p_reg_0 (FF)
+  Destination:          p_reg_9 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.918ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: p_reg_0 to p_reg_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.514   p_reg<0>
+                                                       p_reg_0
+    SLICEL.F1            net (fanout=2)     e  0.100   p_reg<0>
+    SLICEL.COUT          Topcyf                1.011   p_next_addsub0000<0>
+                                                       Madd_p_next_addsub0000_lut<0>
+                                                       Madd_p_next_addsub0000_cy<0>
+                                                       Madd_p_next_addsub0000_cy<1>
+    SLICEL.CIN           net (fanout=1)     e  0.100   Madd_p_next_addsub0000_cy<1>
+    SLICEL.COUT          Tbyp                  0.103   p_next_addsub0000<2>
+                                                       Madd_p_next_addsub0000_cy<2>
+                                                       Madd_p_next_addsub0000_cy<3>
+    SLICEL.CIN           net (fanout=1)     e  0.100   Madd_p_next_addsub0000_cy<3>
+    SLICEL.COUT          Tbyp                  0.103   p_next_addsub0000<4>
+                                                       Madd_p_next_addsub0000_cy<4>
+                                                       Madd_p_next_addsub0000_cy<5>
+    SLICEL.CIN           net (fanout=1)     e  0.100   Madd_p_next_addsub0000_cy<5>
+    SLICEL.COUT          Tbyp                  0.103   p_next_addsub0000<6>
+                                                       Madd_p_next_addsub0000_cy<6>
+                                                       Madd_p_next_addsub0000_cy<7>
+    SLICEL.CIN           net (fanout=1)     e  0.100   Madd_p_next_addsub0000_cy<7>
+    SLICEL.Y             Tciny                 0.756   p_next_addsub0000<8>
+                                                       Madd_p_next_addsub0000_cy<8>
+                                                       Madd_p_next_addsub0000_xor<9>
+    SLICEL.F4            net (fanout=1)     e  0.100   p_next_addsub0000<9>
+    SLICEL.CLK           Tfck                  0.728   p_reg<9>
+                                                       p_next<9>1
+                                                       p_reg_9
+    -------------------------------------------------  ---------------------------
+    Total                                      3.918ns (3.318ns logic, 0.600ns route)
+                                                       (84.7% logic, 15.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     16.085ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mouse_unit/x_reg_0 (FF)
+  Destination:          p_reg_9 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.915ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mouse_unit/x_reg_0 to p_reg_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.YQ            Tcko                  0.511   mouse_unit/x_reg<1>
+                                                       mouse_unit/x_reg_0
+    SLICEL.F2            net (fanout=2)     e  0.100   mouse_unit/x_reg<0>
+    SLICEL.COUT          Topcyf                1.011   p_next_addsub0000<0>
+                                                       Madd_p_next_addsub0000_lut<0>
+                                                       Madd_p_next_addsub0000_cy<0>
+                                                       Madd_p_next_addsub0000_cy<1>
+    SLICEL.CIN           net (fanout=1)     e  0.100   Madd_p_next_addsub0000_cy<1>
+    SLICEL.COUT          Tbyp                  0.103   p_next_addsub0000<2>
+                                                       Madd_p_next_addsub0000_cy<2>
+                                                       Madd_p_next_addsub0000_cy<3>
+    SLICEL.CIN           net (fanout=1)     e  0.100   Madd_p_next_addsub0000_cy<3>
+    SLICEL.COUT          Tbyp                  0.103   p_next_addsub0000<4>
+                                                       Madd_p_next_addsub0000_cy<4>
+                                                       Madd_p_next_addsub0000_cy<5>
+    SLICEL.CIN           net (fanout=1)     e  0.100   Madd_p_next_addsub0000_cy<5>
+    SLICEL.COUT          Tbyp                  0.103   p_next_addsub0000<6>
+                                                       Madd_p_next_addsub0000_cy<6>
+                                                       Madd_p_next_addsub0000_cy<7>
+    SLICEL.CIN           net (fanout=1)     e  0.100   Madd_p_next_addsub0000_cy<7>
+    SLICEL.Y             Tciny                 0.756   p_next_addsub0000<8>
+                                                       Madd_p_next_addsub0000_cy<8>
+                                                       Madd_p_next_addsub0000_xor<9>
+    SLICEL.F4            net (fanout=1)     e  0.100   p_next_addsub0000<9>
+    SLICEL.CLK           Tfck                  0.728   p_reg<9>
+                                                       p_next<9>1
+                                                       p_reg_9
+    -------------------------------------------------  ---------------------------
+    Total                                      3.915ns (3.315ns logic, 0.600ns route)
+                                                       (84.7% logic, 15.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     16.222ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               p_reg_1 (FF)
+  Destination:          p_reg_9 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.778ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: p_reg_1 to p_reg_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.514   p_reg<1>
+                                                       p_reg_1
+    SLICEL.G1            net (fanout=3)     e  0.100   p_reg<1>
+    SLICEL.COUT          Topcyg                0.871   p_next_addsub0000<0>
+                                                       Madd_p_next_addsub0000_lut<1>
+                                                       Madd_p_next_addsub0000_cy<1>
+    SLICEL.CIN           net (fanout=1)     e  0.100   Madd_p_next_addsub0000_cy<1>
+    SLICEL.COUT          Tbyp                  0.103   p_next_addsub0000<2>
+                                                       Madd_p_next_addsub0000_cy<2>
+                                                       Madd_p_next_addsub0000_cy<3>
+    SLICEL.CIN           net (fanout=1)     e  0.100   Madd_p_next_addsub0000_cy<3>
+    SLICEL.COUT          Tbyp                  0.103   p_next_addsub0000<4>
+                                                       Madd_p_next_addsub0000_cy<4>
+                                                       Madd_p_next_addsub0000_cy<5>
+    SLICEL.CIN           net (fanout=1)     e  0.100   Madd_p_next_addsub0000_cy<5>
+    SLICEL.COUT          Tbyp                  0.103   p_next_addsub0000<6>
+                                                       Madd_p_next_addsub0000_cy<6>
+                                                       Madd_p_next_addsub0000_cy<7>
+    SLICEL.CIN           net (fanout=1)     e  0.100   Madd_p_next_addsub0000_cy<7>
+    SLICEL.Y             Tciny                 0.756   p_next_addsub0000<8>
+                                                       Madd_p_next_addsub0000_cy<8>
+                                                       Madd_p_next_addsub0000_xor<9>
+    SLICEL.F4            net (fanout=1)     e  0.100   p_next_addsub0000<9>
+    SLICEL.CLK           Tfck                  0.728   p_reg<9>
+                                                       p_next<9>1
+                                                       p_reg_9
+    -------------------------------------------------  ---------------------------
+    Total                                      3.778ns (3.178ns logic, 0.600ns route)
+                                                       (84.1% logic, 15.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+--------------------------------------------------------------------------------
+
+Paths for end point mouse_unit/state_reg_FSM_FFd2 (SLICEL.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.582ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mouse_unit/ps2_unit/ps2_rx_unit/state_reg_FSM_FFd1 (FF)
+  Destination:          mouse_unit/state_reg_FSM_FFd2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.582ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mouse_unit/ps2_unit/ps2_rx_unit/state_reg_FSM_FFd1 to mouse_unit/state_reg_FSM_FFd2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.411   mouse_unit/ps2_unit/ps2_rx_unit/state_reg_FSM_FFd1
+                                                       mouse_unit/ps2_unit/ps2_rx_unit/state_reg_FSM_FFd1
+    SLICEL.CE            net (fanout=25)    e  0.100   mouse_unit/ps2_unit/ps2_rx_unit/state_reg_FSM_FFd1
+    SLICEL.CLK           Tckce       (-Th)    -0.071   mouse_unit/state_reg_FSM_FFd2
+                                                       mouse_unit/state_reg_FSM_FFd2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.582ns (0.482ns logic, 0.100ns route)
+                                                       (82.8% logic, 17.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point mouse_unit/state_reg_FSM_FFd3 (SLICEL.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.582ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mouse_unit/ps2_unit/ps2_rx_unit/state_reg_FSM_FFd1 (FF)
+  Destination:          mouse_unit/state_reg_FSM_FFd3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.582ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mouse_unit/ps2_unit/ps2_rx_unit/state_reg_FSM_FFd1 to mouse_unit/state_reg_FSM_FFd3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.411   mouse_unit/ps2_unit/ps2_rx_unit/state_reg_FSM_FFd1
+                                                       mouse_unit/ps2_unit/ps2_rx_unit/state_reg_FSM_FFd1
+    SLICEL.CE            net (fanout=25)    e  0.100   mouse_unit/ps2_unit/ps2_rx_unit/state_reg_FSM_FFd1
+    SLICEL.CLK           Tckce       (-Th)    -0.071   mouse_unit/state_reg_FSM_FFd3
+                                                       mouse_unit/state_reg_FSM_FFd3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.582ns (0.482ns logic, 0.100ns route)
+                                                       (82.8% logic, 17.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point mouse_unit/ps2_unit/ps2_tx_unit/filter_reg_1 (SLICEL.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.589ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mouse_unit/ps2_unit/ps2_tx_unit/filter_reg_2 (FF)
+  Destination:          mouse_unit/ps2_unit/ps2_tx_unit/filter_reg_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.589ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mouse_unit/ps2_unit/ps2_tx_unit/filter_reg_2 to mouse_unit/ps2_unit/ps2_tx_unit/filter_reg_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.YQ            Tcko                  0.409   mouse_unit/ps2_unit/ps2_tx_unit/filter_reg<3>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/filter_reg_2
+    SLICEL.BX            net (fanout=6)     e  0.100   mouse_unit/ps2_unit/ps2_tx_unit/filter_reg<2>
+    SLICEL.CLK           Tckdi       (-Th)    -0.080   mouse_unit/ps2_unit/ps2_tx_unit/filter_reg<1>
+                                                       mouse_unit/ps2_unit/ps2_tx_unit/filter_reg_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.589ns (0.489ns logic, 0.100ns route)
+                                                       (83.0% logic, 17.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+--------------------------------------------------------------------------------
+Slack: 18.265ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 8.000ns
+  High pulse limit: 0.694ns (Tch)
+  Physical resource: mouse_unit/ps2_unit/ps2_tx_unit/f_ps2c_reg/CLK
+  Logical resource: mouse_unit/ps2_unit/ps2_tx_unit/f_ps2c_reg/CK
+  Location pin: SLICEL.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.265ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 8.000ns
+  High pulse limit: 0.694ns (Tch)
+  Physical resource: mouse_unit/ps2_unit/ps2_tx_unit/f_ps2c_reg/CLK
+  Logical resource: mouse_unit/ps2_unit/ps2_rx_unit/f_ps2c_reg/CK
+  Location pin: SLICEL.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.265ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 8.000ns
+  High pulse limit: 0.694ns (Tch)
+  Physical resource: mouse_unit/ps2_unit/ps2_tx_unit/state_reg_FSM_FFd1/CLK
+  Logical resource: mouse_unit/ps2_unit/ps2_tx_unit/state_reg_FSM_FFd1/CK
+  Location pin: SLICEL.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.118|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 1134 paths, 0 nets, and 614 connections
+
+Design statistics:
+   Minimum period:   4.118ns{1}   (Maximum frequency: 242.836MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Aug 08 18:06:17 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 99 MB
+
+
+

@@ -1,0 +1,186 @@
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 
+xst -intstyle ise -ifn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.xst" -ofn "C:/Users/LUIS LEON/Xilinx/FINAL_PROJECT/vga_pong.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc vga_ucf.ucf -p xc3s500e-fg320-4 "vga_pong.ngc" vga_pong.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_pong_map.ncd vga_pong.ngd vga_pong.pcf 
+par -w -intstyle ise -ol high -t 1 vga_pong_map.ncd vga_pong.ncd vga_pong.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_pong.twx vga_pong.ncd -o vga_pong.twr vga_pong.pcf -ucf vga_ucf.ucf 
+bitgen -intstyle ise -f vga_pong.ut vga_pong.ncd 

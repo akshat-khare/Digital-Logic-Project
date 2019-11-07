@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse Projects/Final_Project_Mouse/mouse_led.xst" -ofn "E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse Projects/Final_Project_Mouse/mouse_led.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc Mouse_UCF.ucf -p xc3s500e-fg320-5 "mouse_led.ngc" mouse_led.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o mouse_led_map.ncd mouse_led.ngd mouse_led.pcf 
+par -w -intstyle ise -ol high -t 1 mouse_led_map.ncd mouse_led.ncd mouse_led.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mouse_led.twx mouse_led.ncd -o mouse_led.twr mouse_led.pcf -ucf Mouse_UCF.ucf 
+bitgen -intstyle ise -f mouse_led.ut mouse_led.ncd 
+xst -intstyle ise -ifn "E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse Projects/Final_Project_Mouse_LED/mouse_led.xst" -ofn "E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse Projects/Final_Project_Mouse_LED/mouse_led.syr" 
+xst -intstyle ise -ifn "E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse Projects/Final_Project_Mouse_LED/mouse_led.xst" -ofn "E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse Projects/Final_Project_Mouse_LED/mouse_led.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc Mouse_UCF.ucf -p xc3s500e-fg320-5 "mouse_led.ngc" mouse_led.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o mouse_led_map.ncd mouse_led.ngd mouse_led.pcf 
+par -w -intstyle ise -ol high -t 1 mouse_led_map.ncd mouse_led.ncd mouse_led.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mouse_led.twx mouse_led.ncd -o mouse_led.twr mouse_led.pcf -ucf Mouse_UCF.ucf 
+bitgen -intstyle ise -f mouse_led.ut mouse_led.ncd 
+vhdtdtfi -lib work {E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse Projects/Final_Project_Mouse_LED/mouse_led.v} -lang verilog -prj Final_Project_Mouse -o mouse_led.spl -module mouse_led -template C:/Xilinx/14.1/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e mouse_led.spl {E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse Projects/Final_Project_Mouse_LED/mouse_led.sym} 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc Mouse_UCF.ucf -p xc3s500e-fg320-5 "mouse_led.ngc" mouse_led.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o mouse_led_map.ncd mouse_led.ngd mouse_led.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mouse_led_preroute.twx mouse_led_map.ncd -o mouse_led_preroute.twr mouse_led.pcf -ucf Mouse_UCF.ucf 
+par -w -intstyle ise -ol high -t 1 mouse_led_map.ncd mouse_led.ncd mouse_led.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mouse_led.twx mouse_led.ncd -o mouse_led.twr mouse_led.pcf -ucf Mouse_UCF.ucf 
+bitgen -intstyle ise -f mouse_led.ut mouse_led.ncd 

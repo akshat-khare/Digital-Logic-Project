@@ -1,0 +1,8 @@
+Release 14.1 Drc P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Thu Aug 09 14:26:35 2012
+
+drc -z mouse_led.ncd mouse_led.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\0_Homework Folder-1\Northern Illinois University\Summer 2012\ELE 430\Xilinx Programs\Z_Final Project\Mouse Projects\Final_Project_Mouse_LED\mouse_led.ncd
+OUTFILE=E:\0_Homework Folder-1\Northern Illinois University\Summer 2012\ELE 430\Xilinx Programs\Z_Final Project\Mouse Projects\Final_Project_Mouse_LED\mouse_led.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=E:\0_Homework Folder-1\Northern Illinois University\Summer 2012\ELE 430\Xilinx Programs\Z_Final Project\Mouse Projects\Final_Project_Mouse_LED
+LICENSE=WebPack
+USER_INFO=__0_0_0

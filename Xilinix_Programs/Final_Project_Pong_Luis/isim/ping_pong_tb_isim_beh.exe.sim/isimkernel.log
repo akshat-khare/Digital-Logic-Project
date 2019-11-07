@@ -1,0 +1,28 @@
+Command line:
+   ping_pong_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49175
+
+Wed Aug 08 19:04:17 2012
+
+
+ Elaboration Time: 0.093601 sec
+
+ Current Memory Usage: 360.317 Meg
+
+ Total Signals          : 76
+ Total Nets             : 186
+ Total Signal Drivers   : 51
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 64
+ Total Traceable Variables  : 65
+ Total Scalar Nets and Variables : 1195
+
+ Total Simulation Time: 0.187201 sec
+
+ Current Memory Usage: 360.317 Meg
+
+Wed Aug 08 19:05:57 2012
+

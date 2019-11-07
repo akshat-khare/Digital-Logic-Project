@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Final_Project_Mouse" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/mouse E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|mouse.v/ps2_unit - ps2_rxtx</ClosedNode>
+         <ClosedNode>/mouse_led E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|mouse_led.v</ClosedNode>
+         <ClosedNode>/mouse_led E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|mouse_led.v/mouse_unit - mouse</ClosedNode>
+         <ClosedNode>/mouse_led E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Mouse Projects|Final_Project_Mouse|mouse_led.v</ClosedNode>
+         <ClosedNode>/mouse_led E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Mouse Projects|Final_Project_Mouse|mouse_led.v/mouse_unit - mouse/ps2_unit - ps2_rxtx</ClosedNode>
+         <ClosedNode>/mouse_led I:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Mouse Projects|Final_Project_Mouse|mouse_led.v</ClosedNode>
+         <ClosedNode>/ps2_monitor E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|ps2_monitor.v</ClosedNode>
+         <ClosedNode>/ps2_monitor E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|ps2_monitor.v/ps2_rxtx_unit - ps2_rxtx</ClosedNode>
+         <ClosedNode>/ps2_monitor E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|ps2_monitor.v/uart_unit - uart</ClosedNode>
+         <ClosedNode>/ps2_monitor E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Mouse Projects|Final_Project_Mouse|ps2_monitor.v/mouse_light - mouse_led/mouse_unit - mouse</ClosedNode>
+         <ClosedNode>/ps2_monitor E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Mouse Projects|Final_Project_Mouse|ps2_monitor.v/ps2_rxtx_unit - ps2_rxtx</ClosedNode>
+         <ClosedNode>/ps2_monitor E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Mouse Projects|Final_Project_Mouse|ps2_monitor.v/uart_unit - uart</ClosedNode>
+         <ClosedNode>/ps2_monitor I:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Mouse Projects|Final_Project_Mouse|ps2_monitor.v</ClosedNode>
+         <ClosedNode>/ps2_monitor I:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Mouse Projects|Final_Project_Mouse|ps2_monitor.v/mouse_light - mouse_led/mouse_unit - mouse</ClosedNode>
+         <ClosedNode>/ps2_monitor I:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Mouse Projects|Final_Project_Mouse|ps2_monitor.v/ps2_rxtx_unit - ps2_rxtx</ClosedNode>
+         <ClosedNode>/ps2_monitor I:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Mouse Projects|Final_Project_Mouse|ps2_monitor.v/uart_unit - uart</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>mouse_led (E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse Projects/Final_Project_Mouse_LED/mouse_led.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000011a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000011a0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>mouse_led (E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse Projects/Final_Project_Mouse_LED/mouse_led.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fc000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fc0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ps2_tx.v</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000001e3000000040101000100000000000000000000000064ffffffff000000810000000000000004000000af0000000100000000000000270000000100000000000000760000000100000000000000970000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ps2_tx.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fd000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fd0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Configure Target Device</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000011e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000011e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Configure Target Device</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/mouse_led E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|mouse_led.v</ClosedNode>
+         <ClosedNode>/mouse_led E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Mouse Projects|Final_Project_Mouse_LED|mouse_led.v</ClosedNode>
+         <ClosedNode>/mouse_led I:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|mouse_led.v/mouse_unit - mouse</ClosedNode>
+         <ClosedNode>/ps2_monitor E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|ps2_monitor.v</ClosedNode>
+         <ClosedNode>/ps2_monitor E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|ps2_monitor.v/ps2_rxtx_unit - ps2_rxtx</ClosedNode>
+         <ClosedNode>/ps2_monitor E:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|ps2_monitor.v/uart_unit - uart</ClosedNode>
+         <ClosedNode>/ps2_monitor I:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|ps2_monitor.v/ps2_rxtx_unit - ps2_rxtx</ClosedNode>
+         <ClosedNode>/ps2_monitor I:|0_Homework Folder-1|Northern Illinois University|Summer 2012|ELE 430|Xilinx Programs|Z_Final Project|Final_Project_Mouse|ps2_monitor.v/uart_unit - uart</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>mouse_led (E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse Projects/Final_Project_Mouse_LED/mouse_led.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000bf000000020000000000000000000000000200000064ffffffff000000810000000300000002000000bf0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>mouse_led (E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse Projects/Final_Project_Mouse_LED/mouse_led.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fc000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fc0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fc000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fc0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000000e00000009701000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ac0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <CopyAdditionalFiles/>
+</Project>

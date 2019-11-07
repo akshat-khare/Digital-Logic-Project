@@ -1,0 +1,42 @@
+Release 14.1 ngdbuild P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -aul -nt timestamp -uc Mouse_UCF.ucf -p xc3s500e-fg320-5
+mouse_led.ngc mouse_led.ngd
+
+Reading NGO file "E:/0_Homework Folder-1/Northern Illinois University/Summer
+2012/ELE 430/Xilinx Programs/Z_Final Project/Mouse
+Projects/Final_Project_Mouse_LED/mouse_led.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Mouse_UCF.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem - The Period constraint <NET "clk" PERIOD = 20.0ns HIGH
+   40%;> [Mouse_UCF.ucf(8)], is specified using the Net Period method which is
+   not recommended. Please use the Timespec PERIOD method.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 91268 kilobytes
+
+Writing NGD file "mouse_led.ngd" ...
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   5 sec
+
+Writing NGDBUILD log file "mouse_led.bld"...

@@ -1,0 +1,14 @@
+#Example User Constraints File (UCF)
+#####################################################
+### SPARTAN-3E STARTER KIT BOARD CONSTRAINTS FILE
+#####################################################
+# ==== Clock inputs (CLK) ====
+NET "clk" LOC = "C9" | IOSTANDARD = LVCMOS33 ;
+# Define clock period for 50 MHz oscillator (40%/60% duty-cycle)
+NET "clk" PERIOD = 20.0ns HIGH 40%;
+# ==== PS/2 Mouse/Keyboard Port (PS2) ====
+NET "ps2c" LOC = "G14" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "ps2d" LOC = "G13" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+# ==== RS-232 Serial Ports (RS232) ====
+NET "rx" LOC = "R7" | IOSTANDARD = LVTTL ;
+NET "tx" LOC = "M14" | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = SLOW ;

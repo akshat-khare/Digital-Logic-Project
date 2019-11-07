@@ -1,0 +1,541 @@
+--------------------------------------------------------------------------------
+Release 14.1 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.1\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml kb_test.twx kb_test.ncd -o kb_test.twr kb_test.pcf -ucf
+Keyboard_UCF.ucf
+
+Design file:              kb_test.ncd
+Physical constraint file: kb_test.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2012-04-23)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 4387 paths analyzed, 471 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.530ns.
+--------------------------------------------------------------------------------
+
+Paths for end point uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F (SLICE_X40Y68.BY), 84 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     11.470ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               kb_code_unit/fifo_key_unit/r_ptr_reg_1 (FF)
+  Destination:          uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      8.530ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: kb_code_unit/fifo_key_unit/r_ptr_reg_1 to uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y81.XQ      Tcko                  0.515   kb_code_unit/fifo_key_unit/r_ptr_reg<1>
+                                                       kb_code_unit/fifo_key_unit/r_ptr_reg_1
+    SLICE_X48Y85.F2      net (fanout=11)       1.505   kb_code_unit/fifo_key_unit/r_ptr_reg<1>
+    SLICE_X48Y85.X       Tilo                  0.660   key_code<5>
+                                                       kb_code_unit/fifo_key_unit/Mram_array_reg6.SLICEM_F
+    SLICE_X42Y81.G1      net (fanout=34)       1.513   key_code<5>
+    SLICE_X42Y81.Y       Tilo                  0.660   N70
+                                                       ascii_code<5>147
+    SLICE_X42Y79.F2      net (fanout=1)        0.314   ascii_code<5>147
+    SLICE_X42Y79.X       Tif5x                 1.000   ascii_code<5>214
+                                                       ascii_code<5>214_G
+                                                       ascii_code<5>214
+    SLICE_X42Y76.F3      net (fanout=1)        0.235   ascii_code<5>214
+    SLICE_X42Y76.X       Tilo                  0.660   ascii_code<5>
+                                                       ascii_code<5>245
+    SLICE_X40Y68.BY      net (fanout=2)        1.066   ascii_code<5>
+    SLICE_X40Y68.CLK     Tds                   0.402   uart_unit/fifo_tx_unit/N27
+                                                       uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F
+    -------------------------------------------------  ---------------------------
+    Total                                      8.530ns (3.897ns logic, 4.633ns route)
+                                                       (45.7% logic, 54.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.678ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               kb_code_unit/fifo_key_unit/r_ptr_reg_0 (FF)
+  Destination:          uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      8.322ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: kb_code_unit/fifo_key_unit/r_ptr_reg_0 to uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y81.YQ      Tcko                  0.567   kb_code_unit/fifo_key_unit/r_ptr_reg<1>
+                                                       kb_code_unit/fifo_key_unit/r_ptr_reg_0
+    SLICE_X50Y83.F1      net (fanout=12)       1.179   kb_code_unit/fifo_key_unit/r_ptr_reg<0>
+    SLICE_X50Y83.X       Tilo                  0.660   key_code<0>
+                                                       kb_code_unit/fifo_key_unit/Mram_array_reg1.SLICEM_F
+    SLICE_X42Y78.F4      net (fanout=37)       1.771   key_code<0>
+    SLICE_X42Y78.X       Tilo                  0.660   k2a_unit/ascii_code<6>199
+                                                       k2a_unit/ascii_code<6>199
+    SLICE_X42Y79.F1      net (fanout=2)        0.122   k2a_unit/ascii_code<6>199
+    SLICE_X42Y79.X       Tif5x                 1.000   ascii_code<5>214
+                                                       ascii_code<5>214_G
+                                                       ascii_code<5>214
+    SLICE_X42Y76.F3      net (fanout=1)        0.235   ascii_code<5>214
+    SLICE_X42Y76.X       Tilo                  0.660   ascii_code<5>
+                                                       ascii_code<5>245
+    SLICE_X40Y68.BY      net (fanout=2)        1.066   ascii_code<5>
+    SLICE_X40Y68.CLK     Tds                   0.402   uart_unit/fifo_tx_unit/N27
+                                                       uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F
+    -------------------------------------------------  ---------------------------
+    Total                                      8.322ns (3.949ns logic, 4.373ns route)
+                                                       (47.5% logic, 52.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.695ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               kb_code_unit/fifo_key_unit/r_ptr_reg_0 (FF)
+  Destination:          uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      8.305ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: kb_code_unit/fifo_key_unit/r_ptr_reg_0 to uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y81.YQ      Tcko                  0.567   kb_code_unit/fifo_key_unit/r_ptr_reg<1>
+                                                       kb_code_unit/fifo_key_unit/r_ptr_reg_0
+    SLICE_X50Y83.F1      net (fanout=12)       1.179   kb_code_unit/fifo_key_unit/r_ptr_reg<0>
+    SLICE_X50Y83.X       Tilo                  0.660   key_code<0>
+                                                       kb_code_unit/fifo_key_unit/Mram_array_reg1.SLICEM_F
+    SLICE_X42Y81.G4      net (fanout=37)       1.562   key_code<0>
+    SLICE_X42Y81.Y       Tilo                  0.660   N70
+                                                       ascii_code<5>147
+    SLICE_X42Y79.F2      net (fanout=1)        0.314   ascii_code<5>147
+    SLICE_X42Y79.X       Tif5x                 1.000   ascii_code<5>214
+                                                       ascii_code<5>214_G
+                                                       ascii_code<5>214
+    SLICE_X42Y76.F3      net (fanout=1)        0.235   ascii_code<5>214
+    SLICE_X42Y76.X       Tilo                  0.660   ascii_code<5>
+                                                       ascii_code<5>245
+    SLICE_X40Y68.BY      net (fanout=2)        1.066   ascii_code<5>
+    SLICE_X40Y68.CLK     Tds                   0.402   uart_unit/fifo_tx_unit/N27
+                                                       uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F
+    -------------------------------------------------  ---------------------------
+    Total                                      8.305ns (3.949ns logic, 4.356ns route)
+                                                       (47.5% logic, 52.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_G (SLICE_X40Y68.BY), 84 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     11.487ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               kb_code_unit/fifo_key_unit/r_ptr_reg_1 (FF)
+  Destination:          uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_G (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      8.513ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: kb_code_unit/fifo_key_unit/r_ptr_reg_1 to uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_G
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y81.XQ      Tcko                  0.515   kb_code_unit/fifo_key_unit/r_ptr_reg<1>
+                                                       kb_code_unit/fifo_key_unit/r_ptr_reg_1
+    SLICE_X48Y85.F2      net (fanout=11)       1.505   kb_code_unit/fifo_key_unit/r_ptr_reg<1>
+    SLICE_X48Y85.X       Tilo                  0.660   key_code<5>
+                                                       kb_code_unit/fifo_key_unit/Mram_array_reg6.SLICEM_F
+    SLICE_X42Y81.G1      net (fanout=34)       1.513   key_code<5>
+    SLICE_X42Y81.Y       Tilo                  0.660   N70
+                                                       ascii_code<5>147
+    SLICE_X42Y79.F2      net (fanout=1)        0.314   ascii_code<5>147
+    SLICE_X42Y79.X       Tif5x                 1.000   ascii_code<5>214
+                                                       ascii_code<5>214_G
+                                                       ascii_code<5>214
+    SLICE_X42Y76.F3      net (fanout=1)        0.235   ascii_code<5>214
+    SLICE_X42Y76.X       Tilo                  0.660   ascii_code<5>
+                                                       ascii_code<5>245
+    SLICE_X40Y68.BY      net (fanout=2)        1.066   ascii_code<5>
+    SLICE_X40Y68.CLK     Tds                   0.385   uart_unit/fifo_tx_unit/N27
+                                                       uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_G
+    -------------------------------------------------  ---------------------------
+    Total                                      8.513ns (3.880ns logic, 4.633ns route)
+                                                       (45.6% logic, 54.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.695ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               kb_code_unit/fifo_key_unit/r_ptr_reg_0 (FF)
+  Destination:          uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_G (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      8.305ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: kb_code_unit/fifo_key_unit/r_ptr_reg_0 to uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_G
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y81.YQ      Tcko                  0.567   kb_code_unit/fifo_key_unit/r_ptr_reg<1>
+                                                       kb_code_unit/fifo_key_unit/r_ptr_reg_0
+    SLICE_X50Y83.F1      net (fanout=12)       1.179   kb_code_unit/fifo_key_unit/r_ptr_reg<0>
+    SLICE_X50Y83.X       Tilo                  0.660   key_code<0>
+                                                       kb_code_unit/fifo_key_unit/Mram_array_reg1.SLICEM_F
+    SLICE_X42Y78.F4      net (fanout=37)       1.771   key_code<0>
+    SLICE_X42Y78.X       Tilo                  0.660   k2a_unit/ascii_code<6>199
+                                                       k2a_unit/ascii_code<6>199
+    SLICE_X42Y79.F1      net (fanout=2)        0.122   k2a_unit/ascii_code<6>199
+    SLICE_X42Y79.X       Tif5x                 1.000   ascii_code<5>214
+                                                       ascii_code<5>214_G
+                                                       ascii_code<5>214
+    SLICE_X42Y76.F3      net (fanout=1)        0.235   ascii_code<5>214
+    SLICE_X42Y76.X       Tilo                  0.660   ascii_code<5>
+                                                       ascii_code<5>245
+    SLICE_X40Y68.BY      net (fanout=2)        1.066   ascii_code<5>
+    SLICE_X40Y68.CLK     Tds                   0.385   uart_unit/fifo_tx_unit/N27
+                                                       uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_G
+    -------------------------------------------------  ---------------------------
+    Total                                      8.305ns (3.932ns logic, 4.373ns route)
+                                                       (47.3% logic, 52.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.712ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               kb_code_unit/fifo_key_unit/r_ptr_reg_0 (FF)
+  Destination:          uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_G (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      8.288ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: kb_code_unit/fifo_key_unit/r_ptr_reg_0 to uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_G
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y81.YQ      Tcko                  0.567   kb_code_unit/fifo_key_unit/r_ptr_reg<1>
+                                                       kb_code_unit/fifo_key_unit/r_ptr_reg_0
+    SLICE_X50Y83.F1      net (fanout=12)       1.179   kb_code_unit/fifo_key_unit/r_ptr_reg<0>
+    SLICE_X50Y83.X       Tilo                  0.660   key_code<0>
+                                                       kb_code_unit/fifo_key_unit/Mram_array_reg1.SLICEM_F
+    SLICE_X42Y81.G4      net (fanout=37)       1.562   key_code<0>
+    SLICE_X42Y81.Y       Tilo                  0.660   N70
+                                                       ascii_code<5>147
+    SLICE_X42Y79.F2      net (fanout=1)        0.314   ascii_code<5>147
+    SLICE_X42Y79.X       Tif5x                 1.000   ascii_code<5>214
+                                                       ascii_code<5>214_G
+                                                       ascii_code<5>214
+    SLICE_X42Y76.F3      net (fanout=1)        0.235   ascii_code<5>214
+    SLICE_X42Y76.X       Tilo                  0.660   ascii_code<5>
+                                                       ascii_code<5>245
+    SLICE_X40Y68.BY      net (fanout=2)        1.066   ascii_code<5>
+    SLICE_X40Y68.CLK     Tds                   0.385   uart_unit/fifo_tx_unit/N27
+                                                       uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_G
+    -------------------------------------------------  ---------------------------
+    Total                                      8.288ns (3.932ns logic, 4.356ns route)
+                                                       (47.4% logic, 52.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point uart_unit/fifo_tx_unit/Mram_array_reg9.SLICEM_F (SLICE_X40Y70.BY), 84 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     11.506ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               kb_code_unit/fifo_key_unit/r_ptr_reg_0 (FF)
+  Destination:          uart_unit/fifo_tx_unit/Mram_array_reg9.SLICEM_F (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      8.494ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: kb_code_unit/fifo_key_unit/r_ptr_reg_0 to uart_unit/fifo_tx_unit/Mram_array_reg9.SLICEM_F
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y81.YQ      Tcko                  0.567   kb_code_unit/fifo_key_unit/r_ptr_reg<1>
+                                                       kb_code_unit/fifo_key_unit/r_ptr_reg_0
+    SLICE_X50Y83.F1      net (fanout=12)       1.179   kb_code_unit/fifo_key_unit/r_ptr_reg<0>
+    SLICE_X50Y83.X       Tilo                  0.660   key_code<0>
+                                                       kb_code_unit/fifo_key_unit/Mram_array_reg1.SLICEM_F
+    SLICE_X42Y78.G4      net (fanout=37)       1.827   key_code<0>
+    SLICE_X42Y78.Y       Tilo                  0.660   k2a_unit/ascii_code<6>199
+                                                       ascii_code<4>168
+    SLICE_X45Y78.G2      net (fanout=1)        0.347   ascii_code<4>168
+    SLICE_X45Y78.Y       Tilo                  0.612   ascii_code<4>
+                                                       ascii_code<4>238_SW0
+    SLICE_X45Y78.F3      net (fanout=1)        0.020   ascii_code<4>238_SW0/O
+    SLICE_X45Y78.X       Tilo                  0.612   ascii_code<4>
+                                                       ascii_code<4>252
+    SLICE_X40Y70.BY      net (fanout=2)        1.608   ascii_code<4>
+    SLICE_X40Y70.CLK     Tds                   0.402   uart_unit/fifo_tx_unit/N21
+                                                       uart_unit/fifo_tx_unit/Mram_array_reg9.SLICEM_F
+    -------------------------------------------------  ---------------------------
+    Total                                      8.494ns (3.513ns logic, 4.981ns route)
+                                                       (41.4% logic, 58.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.617ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               kb_code_unit/fifo_key_unit/r_ptr_reg_0 (FF)
+  Destination:          uart_unit/fifo_tx_unit/Mram_array_reg9.SLICEM_F (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      8.383ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: kb_code_unit/fifo_key_unit/r_ptr_reg_0 to uart_unit/fifo_tx_unit/Mram_array_reg9.SLICEM_F
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y81.YQ      Tcko                  0.567   kb_code_unit/fifo_key_unit/r_ptr_reg<1>
+                                                       kb_code_unit/fifo_key_unit/r_ptr_reg_0
+    SLICE_X50Y82.F1      net (fanout=12)       1.179   kb_code_unit/fifo_key_unit/r_ptr_reg<0>
+    SLICE_X50Y82.X       Tilo                  0.660   key_code<3>
+                                                       kb_code_unit/fifo_key_unit/Mram_array_reg4.SLICEM_F
+    SLICE_X45Y79.G2      net (fanout=35)       1.086   key_code<3>
+    SLICE_X45Y79.Y       Tilo                  0.612   N68
+                                                       ascii_code<0>81
+    SLICE_X44Y80.G3      net (fanout=1)        0.270   ascii_code<0>_bdd14
+    SLICE_X44Y80.X       Tif5x                 1.000   ascii_code<4>125
+                                                       ascii_code<4>125_F
+                                                       ascii_code<4>125
+    SLICE_X45Y78.F1      net (fanout=1)        0.387   ascii_code<4>125
+    SLICE_X45Y78.X       Tilo                  0.612   ascii_code<4>
+                                                       ascii_code<4>252
+    SLICE_X40Y70.BY      net (fanout=2)        1.608   ascii_code<4>
+    SLICE_X40Y70.CLK     Tds                   0.402   uart_unit/fifo_tx_unit/N21
+                                                       uart_unit/fifo_tx_unit/Mram_array_reg9.SLICEM_F
+    -------------------------------------------------  ---------------------------
+    Total                                      8.383ns (3.853ns logic, 4.530ns route)
+                                                       (46.0% logic, 54.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.620ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               kb_code_unit/fifo_key_unit/r_ptr_reg_0 (FF)
+  Destination:          uart_unit/fifo_tx_unit/Mram_array_reg9.SLICEM_F (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      8.380ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: kb_code_unit/fifo_key_unit/r_ptr_reg_0 to uart_unit/fifo_tx_unit/Mram_array_reg9.SLICEM_F
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y81.YQ      Tcko                  0.567   kb_code_unit/fifo_key_unit/r_ptr_reg<1>
+                                                       kb_code_unit/fifo_key_unit/r_ptr_reg_0
+    SLICE_X50Y82.F1      net (fanout=12)       1.179   kb_code_unit/fifo_key_unit/r_ptr_reg<0>
+    SLICE_X50Y82.X       Tilo                  0.660   key_code<3>
+                                                       kb_code_unit/fifo_key_unit/Mram_array_reg4.SLICEM_F
+    SLICE_X45Y80.F2      net (fanout=35)       1.333   key_code<3>
+    SLICE_X45Y80.X       Tilo                  0.612   N109
+                                                       ascii_code<4>125_G_SW0
+    SLICE_X44Y80.F3      net (fanout=1)        0.020   N109
+    SLICE_X44Y80.X       Tif5x                 1.000   ascii_code<4>125
+                                                       ascii_code<4>125_G
+                                                       ascii_code<4>125
+    SLICE_X45Y78.F1      net (fanout=1)        0.387   ascii_code<4>125
+    SLICE_X45Y78.X       Tilo                  0.612   ascii_code<4>
+                                                       ascii_code<4>252
+    SLICE_X40Y70.BY      net (fanout=2)        1.608   ascii_code<4>
+    SLICE_X40Y70.CLK     Tds                   0.402   uart_unit/fifo_tx_unit/N21
+                                                       uart_unit/fifo_tx_unit/Mram_array_reg9.SLICEM_F
+    -------------------------------------------------  ---------------------------
+    Total                                      8.380ns (3.853ns logic, 4.527ns route)
+                                                       (46.0% logic, 54.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+--------------------------------------------------------------------------------
+
+Paths for end point uart_unit/fifo_tx_unit/Mram_array_reg15.SLICEM_F (SLICE_X40Y67.G3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.830ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               uart_unit/fifo_tx_unit/w_ptr_reg_2 (FF)
+  Destination:          uart_unit/fifo_tx_unit/Mram_array_reg15.SLICEM_F (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.827ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.003ns (0.031 - 0.034)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: uart_unit/fifo_tx_unit/w_ptr_reg_2 to uart_unit/fifo_tx_unit/Mram_array_reg15.SLICEM_F
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y69.XQ      Tcko                  0.411   uart_unit/fifo_tx_unit/w_ptr_reg<2>
+                                                       uart_unit/fifo_tx_unit/w_ptr_reg_2
+    SLICE_X40Y67.G3      net (fanout=20)       0.415   uart_unit/fifo_tx_unit/w_ptr_reg<2>
+    SLICE_X40Y67.CLK     Tah         (-Th)    -0.001   uart_unit/fifo_tx_unit/N33
+                                                       uart_unit/fifo_tx_unit/Mram_array_reg15.SLICEM_F
+    -------------------------------------------------  ---------------------------
+    Total                                      0.827ns (0.412ns logic, 0.415ns route)
+                                                       (49.8% logic, 50.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point uart_unit/fifo_tx_unit/Mram_array_reg15.SLICEM_G (SLICE_X40Y67.G3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.830ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               uart_unit/fifo_tx_unit/w_ptr_reg_2 (FF)
+  Destination:          uart_unit/fifo_tx_unit/Mram_array_reg15.SLICEM_G (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.827ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.003ns (0.031 - 0.034)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: uart_unit/fifo_tx_unit/w_ptr_reg_2 to uart_unit/fifo_tx_unit/Mram_array_reg15.SLICEM_G
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y69.XQ      Tcko                  0.411   uart_unit/fifo_tx_unit/w_ptr_reg<2>
+                                                       uart_unit/fifo_tx_unit/w_ptr_reg_2
+    SLICE_X40Y67.G3      net (fanout=20)       0.415   uart_unit/fifo_tx_unit/w_ptr_reg<2>
+    SLICE_X40Y67.CLK     Tah         (-Th)    -0.001   uart_unit/fifo_tx_unit/N33
+                                                       uart_unit/fifo_tx_unit/Mram_array_reg15.SLICEM_G
+    -------------------------------------------------  ---------------------------
+    Total                                      0.827ns (0.412ns logic, 0.415ns route)
+                                                       (49.8% logic, 50.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F (SLICE_X40Y68.G3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.844ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               uart_unit/fifo_tx_unit/w_ptr_reg_2 (FF)
+  Destination:          uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.841ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.003ns (0.031 - 0.034)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: uart_unit/fifo_tx_unit/w_ptr_reg_2 to uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y69.XQ      Tcko                  0.411   uart_unit/fifo_tx_unit/w_ptr_reg<2>
+                                                       uart_unit/fifo_tx_unit/w_ptr_reg_2
+    SLICE_X40Y68.G3      net (fanout=20)       0.429   uart_unit/fifo_tx_unit/w_ptr_reg<2>
+    SLICE_X40Y68.CLK     Tah         (-Th)    -0.001   uart_unit/fifo_tx_unit/N27
+                                                       uart_unit/fifo_tx_unit/Mram_array_reg12.SLICEM_F
+    -------------------------------------------------  ---------------------------
+    Total                                      0.841ns (0.412ns logic, 0.429ns route)
+                                                       (49.0% logic, 51.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+--------------------------------------------------------------------------------
+Slack: 18.203ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 8.000ns
+  High pulse limit: 0.719ns (Tch)
+  Physical resource: uart_unit/fifo_tx_unit/w_ptr_reg<3>/CLK
+  Logical resource: uart_unit/fifo_tx_unit/w_ptr_reg_3/CK
+  Location pin: SLICE_X36Y70.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.203ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 8.000ns
+  High pulse limit: 0.719ns (Tch)
+  Physical resource: uart_unit/fifo_tx_unit/w_ptr_reg<4>/CLK
+  Logical resource: uart_unit/fifo_tx_unit/w_ptr_reg_4/CK
+  Location pin: SLICE_X36Y68.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.203ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 8.000ns
+  High pulse limit: 0.719ns (Tch)
+  Physical resource: uart_unit/uart_tx_unit/s_reg<1>/CLK
+  Logical resource: uart_unit/uart_tx_unit/s_reg_1/CK
+  Location pin: SLICE_X46Y51.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.530|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 4387 paths, 0 nets, and 1115 connections
+
+Design statistics:
+   Minimum period:   8.530ns{1}   (Maximum frequency: 117.233MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Aug 08 17:42:30 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 101 MB
+
+
+

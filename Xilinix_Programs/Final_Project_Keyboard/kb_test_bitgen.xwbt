@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\0_Homework Folder-1\Northern Illinois University\Summer 2012\ELE 430\Xilinx Programs\Z_Final Project\Keyboard Projects\Final_Project_Keyboard_Working\kb_test.ncd
+OUTFILE=E:\0_Homework Folder-1\Northern Illinois University\Summer 2012\ELE 430\Xilinx Programs\Z_Final Project\Keyboard Projects\Final_Project_Keyboard_Working\kb_test.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=E:\0_Homework Folder-1\Northern Illinois University\Summer 2012\ELE 430\Xilinx Programs\Z_Final Project\Keyboard Projects\Final_Project_Keyboard_Working
+LICENSE=WebPack
+USER_INFO=__0_0_0

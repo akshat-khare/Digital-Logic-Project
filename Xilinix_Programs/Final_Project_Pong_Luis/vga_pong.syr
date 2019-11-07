@@ -1,0 +1,584 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Reading design: vga_pong.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vga_pong.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vga_pong"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : vga_pong
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "vga_screen.v" in library work
+Compiling verilog file "vga_game.v" in library work
+Module <vga_screen> compiled
+Compiling verilog file "vga_pong.v" in library work
+Module <vga_game> compiled
+Module <vga_pong> compiled
+No errors in compilation
+Analysis of file <"vga_pong.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <vga_pong> in library <work>.
+
+Analyzing hierarchy for module <vga_screen> in library <work> with parameters.
+	HB = "00000000000000000000000000010000"
+	HD = "00000000000000000000001010000000"
+	HF = "00000000000000000000000000110000"
+	HR = "00000000000000000000000001100000"
+	VB = "00000000000000000000000000100001"
+	VD = "00000000000000000000000111100000"
+	VF = "00000000000000000000000000001010"
+	VR = "00000000000000000000000000000010"
+
+Analyzing hierarchy for module <vga_game> in library <work> with parameters.
+	BALL_SIZE = "00000000000000000000000000001000"
+	BALL_V_N = "11111111111111111111111111111111"
+	BALL_V_P = "00000000000000000000000000000001"
+	BAR0_X_L = "00000000000000000000001001100100"
+	BAR0_X_R = "00000000000000000000001001100111"
+	BAR1_X_L = "00000000000000000000000000011000"
+	BAR1_X_R = "00000000000000000000000000011011"
+	BAR_V = "00000000000000000000000000000100"
+	BAR_Y_SIZE = "00000000000000000000000001001000"
+	MAX_X = "00000000000000000000001010000000"
+	MAX_Y = "00000000000000000000000111100000"
+	WALL0_X_L = "00000000000000000000001001110110"
+	WALL0_X_R = "00000000000000000000001001111111"
+	WALL1_X_L = "00000000000000000000000000000000"
+	WALL1_X_R = "00000000000000000000000000001001"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <vga_pong>.
+Module <vga_pong> is correct for synthesis.
+ 
+Analyzing module <vga_screen> in library <work>.
+	HB = 32'sb00000000000000000000000000010000
+	HD = 32'sb00000000000000000000001010000000
+	HF = 32'sb00000000000000000000000000110000
+	HR = 32'sb00000000000000000000000001100000
+	VB = 32'sb00000000000000000000000000100001
+	VD = 32'sb00000000000000000000000111100000
+	VF = 32'sb00000000000000000000000000001010
+	VR = 32'sb00000000000000000000000000000010
+Module <vga_screen> is correct for synthesis.
+ 
+Analyzing module <vga_game> in library <work>.
+	BALL_SIZE = 32'sb00000000000000000000000000001000
+	BALL_V_N = 32'sb11111111111111111111111111111111
+	BALL_V_P = 32'sb00000000000000000000000000000001
+	BAR0_X_L = 32'sb00000000000000000000001001100100
+	BAR0_X_R = 32'sb00000000000000000000001001100111
+	BAR1_X_L = 32'sb00000000000000000000000000011000
+	BAR1_X_R = 32'sb00000000000000000000000000011011
+	BAR_V = 32'sb00000000000000000000000000000100
+	BAR_Y_SIZE = 32'sb00000000000000000000000001001000
+	MAX_X = 32'sb00000000000000000000001010000000
+	MAX_Y = 32'sb00000000000000000000000111100000
+	WALL0_X_L = 32'sb00000000000000000000001001110110
+	WALL0_X_R = 32'sb00000000000000000000001001111111
+	WALL1_X_L = 32'sb00000000000000000000000000000000
+	WALL1_X_R = 32'sb00000000000000000000000000001001
+Module <vga_game> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <vga_screen>.
+    Related source file is "vga_screen.v".
+    Found 10-bit adder for signal <h_count_next$addsub0000> created at line 71.
+    Found 10-bit register for signal <h_count_reg>.
+    Found 10-bit comparator greatequal for signal <h_sync_next$cmp_ge0000> created at line 87.
+    Found 10-bit comparator lessequal for signal <h_sync_next$cmp_le0000> created at line 87.
+    Found 1-bit register for signal <h_sync_reg>.
+    Found 1-bit register for signal <mod2_reg>.
+    Found 10-bit adder for signal <v_count_next$addsub0000> created at line 81.
+    Found 10-bit register for signal <v_count_reg>.
+    Found 10-bit comparator greatequal for signal <v_sync_next$cmp_ge0000> created at line 90.
+    Found 10-bit comparator lessequal for signal <v_sync_next$cmp_le0000> created at line 90.
+    Found 1-bit register for signal <v_sync_reg>.
+    Found 11-bit comparator less for signal <video_on$cmp_lt0000> created at line 94.
+    Found 10-bit comparator less for signal <video_on$cmp_lt0001> created at line 94.
+    Summary:
+	inferred  23 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <vga_screen> synthesized.
+
+
+Synthesizing Unit <vga_game>.
+    Related source file is "vga_game.v".
+    Found 8x8-bit ROM for signal <rom_data>.
+    Found 10-bit adder for signal <ball_x_next$addsub0000> created at line 216.
+    Found 10-bit subtractor for signal <ball_x_r>.
+    Found 10-bit adder carry out for signal <ball_x_r$addsub0000> created at line 197.
+    Found 10-bit register for signal <ball_x_reg>.
+    Found 10-bit subtractor for signal <ball_y_b>.
+    Found 10-bit adder carry out for signal <ball_y_b$addsub0000> created at line 198.
+    Found 10-bit adder for signal <ball_y_next$addsub0000> created at line 218.
+    Found 10-bit register for signal <ball_y_reg>.
+    Found 10-bit subtractor for signal <bar0_y_b>.
+    Found 10-bit adder carry out for signal <bar0_y_b$addsub0000> created at line 143.
+    Found 10-bit comparator greater for signal <bar0_y_next$cmp_gt0000> created at line 162.
+    Found 10-bit comparator less for signal <bar0_y_next$cmp_lt0000> created at line 159.
+    Found 10-bit addsub for signal <bar0_y_next$share0000>.
+    Found 10-bit register for signal <bar0_y_reg>.
+    Found 10-bit subtractor for signal <bar1_y_b>.
+    Found 10-bit adder carry out for signal <bar1_y_b$addsub0000> created at line 167.
+    Found 10-bit comparator greater for signal <bar1_y_next$cmp_gt0000> created at line 186.
+    Found 10-bit comparator less for signal <bar1_y_next$cmp_lt0000> created at line 183.
+    Found 10-bit addsub for signal <bar1_y_next$share0000>.
+    Found 10-bit register for signal <bar1_y_reg>.
+    Found 10-bit comparator greatequal for signal <paddle_left$cmp_le0000> created at line 169.
+    Found 10-bit comparator lessequal for signal <paddle_left$cmp_le0001> created at line 169.
+    Found 10-bit comparator lessequal for signal <paddle_left$cmp_le0002> created at line 169.
+    Found 10-bit comparator lessequal for signal <paddle_left$cmp_le0003> created at line 169.
+    Found 11-bit comparator greatequal for signal <paddle_right$cmp_le0000> created at line 145.
+    Found 11-bit comparator lessequal for signal <paddle_right$cmp_le0001> created at line 145.
+    Found 10-bit comparator lessequal for signal <paddle_right$cmp_le0002> created at line 145.
+    Found 10-bit comparator lessequal for signal <paddle_right$cmp_le0003> created at line 145.
+    Found 3-bit subtractor for signal <rom_addr>.
+    Found 3-bit subtractor for signal <rom_col>.
+    Found 10-bit comparator lessequal for signal <sq_ball_on$cmp_le0000> created at line 201.
+    Found 10-bit comparator lessequal for signal <sq_ball_on$cmp_le0001> created at line 201.
+    Found 10-bit comparator lessequal for signal <sq_ball_on$cmp_le0002> created at line 201.
+    Found 10-bit comparator lessequal for signal <sq_ball_on$cmp_le0003> created at line 201.
+    Found 10-bit comparator lessequal for signal <wall_left>.
+    Found 11-bit comparator greatequal for signal <wall_right$cmp_le0000> created at line 131.
+    Found 11-bit comparator lessequal for signal <wall_right$cmp_le0001> created at line 131.
+    Found 11-bit comparator greatequal for signal <x_delta_next$cmp_ge0000> created at line 233.
+    Found 10-bit comparator greater for signal <x_delta_next$cmp_gt0000> created at line 230.
+    Found 11-bit comparator greatequal for signal <x_delta_next$cmp_le0000> created at line 236.
+    Found 11-bit comparator lessequal for signal <x_delta_next$cmp_le0001> created at line 236.
+    Found 10-bit comparator lessequal for signal <x_delta_next$cmp_le0002> created at line 236.
+    Found 10-bit comparator lessequal for signal <x_delta_next$cmp_le0003> created at line 236.
+    Found 10-bit comparator lessequal for signal <x_delta_next$cmp_le0004> created at line 241.
+    Found 10-bit comparator greatequal for signal <x_delta_next$cmp_le0005> created at line 244.
+    Found 10-bit comparator lessequal for signal <x_delta_next$cmp_le0006> created at line 244.
+    Found 10-bit comparator lessequal for signal <x_delta_next$cmp_le0007> created at line 244.
+    Found 10-bit comparator lessequal for signal <x_delta_next$cmp_le0008> created at line 244.
+    Found 10-bit comparator less for signal <x_delta_next$cmp_lt0000> created at line 227.
+    Found 10-bit register for signal <x_delta_reg>.
+    Found 10-bit register for signal <y_delta_reg>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  40 D-type flip-flop(s).
+	inferred  14 Adder/Subtractor(s).
+	inferred  31 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <vga_game> synthesized.
+
+
+Synthesizing Unit <vga_pong>.
+    Related source file is "vga_pong.v".
+    Found 3-bit register for signal <rgb_reg>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <vga_pong> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 8x8-bit ROM                                           : 1
+# Adders/Subtractors                                   : 16
+ 10-bit adder                                          : 4
+ 10-bit adder carry out                                : 4
+ 10-bit addsub                                         : 2
+ 10-bit subtractor                                     : 4
+ 3-bit subtractor                                      : 2
+# Registers                                            : 12
+ 1-bit register                                        : 3
+ 10-bit register                                       : 8
+ 3-bit register                                        : 1
+# Comparators                                          : 37
+ 10-bit comparator greatequal                          : 4
+ 10-bit comparator greater                             : 3
+ 10-bit comparator less                                : 4
+ 10-bit comparator lessequal                           : 18
+ 11-bit comparator greatequal                          : 4
+ 11-bit comparator less                                : 1
+ 11-bit comparator lessequal                           : 3
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <vga_game>.
+The following registers are absorbed into accumulator <ball_y_reg>: 1 register on signal <ball_y_reg>.
+The following registers are absorbed into accumulator <ball_x_reg>: 1 register on signal <ball_x_reg>.
+Unit <vga_game> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 8x8-bit ROM                                           : 1
+# Adders/Subtractors                                   : 14
+ 10-bit adder                                          : 2
+ 10-bit adder carry out                                : 4
+ 10-bit addsub                                         : 2
+ 10-bit subtractor                                     : 4
+ 3-bit subtractor                                      : 2
+# Accumulators                                         : 2
+ 10-bit up loadable accumulator                        : 2
+# Registers                                            : 66
+ Flip-Flops                                            : 66
+# Comparators                                          : 37
+ 10-bit comparator greatequal                          : 4
+ 10-bit comparator greater                             : 3
+ 10-bit comparator less                                : 4
+ 10-bit comparator lessequal                           : 18
+ 11-bit comparator greatequal                          : 4
+ 11-bit comparator less                                : 1
+ 11-bit comparator lessequal                           : 3
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <vga_pong> ...
+
+Optimizing unit <vga_screen> ...
+
+Optimizing unit <vga_game> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vga_pong, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 86
+ Flip-Flops                                            : 86
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : vga_pong.ngr
+Top Level Output File Name         : vga_pong
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 706
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 26
+#      LUT2                        : 155
+#      LUT2_D                      : 4
+#      LUT2_L                      : 4
+#      LUT3                        : 38
+#      LUT3_L                      : 4
+#      LUT4                        : 128
+#      LUT4_D                      : 14
+#      LUT4_L                      : 8
+#      MUXCY                       : 210
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 100
+# FlipFlops/Latches                : 86
+#      FDC                         : 61
+#      FDCE                        : 20
+#      FDE                         : 3
+#      FDP                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      IBUF                        : 3
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      203  out of   4656     4%  
+ Number of Slice Flip Flops:             86  out of   9312     0%  
+ Number of 4 input LUTs:                392  out of   9312     4%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    232     3%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK_50MHZ                          | BUFGP                  | 86    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RESET                              | IBUF                   | 83    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 11.592ns (Maximum Frequency: 86.266MHz)
+   Minimum input arrival time before clock: 7.734ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_50MHZ'
+  Clock period: 11.592ns (frequency: 86.266MHz)
+  Total number of paths / destination ports: 41784 / 109
+-------------------------------------------------------------------------
+Delay:               11.592ns (Levels of Logic = 10)
+  Source:            unit1/bar0_y_reg_3 (FF)
+  Destination:       unit1/x_delta_reg_2 (FF)
+  Source Clock:      CLK_50MHZ rising
+  Destination Clock: CLK_50MHZ rising
+
+  Data Path: unit1/bar0_y_reg_3 to unit1/x_delta_reg_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.591   0.886  unit1/bar0_y_reg_3 (unit1/bar0_y_reg_3)
+     LUT4:I3->O            3   0.704   0.610  unit1/Madd_bar0_y_b_addsub0000_xor<9>121 (unit1/N18)
+     LUT2:I1->O            1   0.704   0.000  unit1/Msub_bar0_y_b_lut<7> (unit1/Msub_bar0_y_b_lut<7>)
+     MUXCY:S->O            1   0.464   0.000  unit1/Msub_bar0_y_b_cy<7> (unit1/Msub_bar0_y_b_cy<7>)
+     MUXCY:CI->O           0   0.059   0.000  unit1/Msub_bar0_y_b_cy<8> (unit1/Msub_bar0_y_b_cy<8>)
+     XORCY:CI->O          14   0.804   1.079  unit1/Msub_bar0_y_b_xor<9> (unit1/bar0_y_b<9>)
+     LUT2:I1->O            1   0.704   0.000  unit1/Mcompar_x_delta_next_cmp_le0003_lut<9> (unit1/Mcompar_x_delta_next_cmp_le0003_lut<9>)
+     MUXCY:S->O            1   0.864   0.424  unit1/Mcompar_x_delta_next_cmp_le0003_cy<9> (unit1/x_delta_next_cmp_le0003)
+     LUT4:I3->O            1   0.704   0.424  unit1/x_delta_next<0>229 (unit1/x_delta_next<0>229)
+     LUT4_D:I3->O          9   0.704   0.855  unit1/x_delta_next<0>269 (unit1/N20)
+     LUT3:I2->O            1   0.704   0.000  unit1/x_delta_next<9>1 (unit1/x_delta_next<9>)
+     FDC:D                     0.308          unit1/x_delta_reg_9
+    ----------------------------------------
+    Total                     11.592ns (7.314ns logic, 4.278ns route)
+                                       (63.1% logic, 36.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_50MHZ'
+  Total number of paths / destination ports: 270 / 20
+-------------------------------------------------------------------------
+Offset:              7.734ns (Levels of Logic = 14)
+  Source:            btn<0> (PAD)
+  Destination:       unit1/bar1_y_reg_9 (FF)
+  Destination Clock: CLK_50MHZ rising
+
+  Data Path: btn<0> to unit1/bar1_y_reg_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   1.218   1.435  btn_0_IBUF (btn_0_IBUF)
+     LUT4:I0->O            1   0.704   0.455  unit1/bar1_y_next_cmp_lt00002255_SW0 (N58)
+     LUT4:I2->O            2   0.704   0.447  unit1/bar1_y_next_mux00012 (unit1/bar1_y_next_mux0001)
+     MUXCY:CI->O           1   0.059   0.000  unit1/Maddsub_bar1_y_next_share0000_cy<0> (unit1/Maddsub_bar1_y_next_share0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  unit1/Maddsub_bar1_y_next_share0000_cy<1> (unit1/Maddsub_bar1_y_next_share0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  unit1/Maddsub_bar1_y_next_share0000_cy<2> (unit1/Maddsub_bar1_y_next_share0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  unit1/Maddsub_bar1_y_next_share0000_cy<3> (unit1/Maddsub_bar1_y_next_share0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  unit1/Maddsub_bar1_y_next_share0000_cy<4> (unit1/Maddsub_bar1_y_next_share0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  unit1/Maddsub_bar1_y_next_share0000_cy<5> (unit1/Maddsub_bar1_y_next_share0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  unit1/Maddsub_bar1_y_next_share0000_cy<6> (unit1/Maddsub_bar1_y_next_share0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  unit1/Maddsub_bar1_y_next_share0000_cy<7> (unit1/Maddsub_bar1_y_next_share0000_cy<7>)
+     MUXCY:CI->O           0   0.059   0.000  unit1/Maddsub_bar1_y_next_share0000_cy<8> (unit1/Maddsub_bar1_y_next_share0000_cy<8>)
+     XORCY:CI->O           1   0.804   0.424  unit1/Maddsub_bar1_y_next_share0000_xor<9> (unit1/bar1_y_next_share0000<9>)
+     LUT4:I3->O            1   0.704   0.000  unit1/bar1_y_next<9>1 (unit1/bar1_y_next<9>)
+     FDC:D                     0.308          unit1/bar1_y_reg_9
+    ----------------------------------------
+    Total                      7.734ns (4.973ns logic, 2.761ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_50MHZ'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            unit0/v_sync_reg (FF)
+  Destination:       vsync (PAD)
+  Source Clock:      CLK_50MHZ rising
+
+  Data Path: unit0/v_sync_reg to vsync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.420  unit0/v_sync_reg (unit0/v_sync_reg)
+     OBUF:I->O                 3.272          vsync_OBUF (vsync)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 35.00 secs
+Total CPU time to Xst completion: 34.46 secs
+ 
+--> 
+
+Total memory usage is 251940 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

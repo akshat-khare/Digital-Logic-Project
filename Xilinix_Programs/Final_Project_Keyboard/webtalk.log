@@ -1,0 +1,16 @@
+Release 14.1 - WebTalk (P.15xf)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=86bc4e60fff64d2cb20d32880432ff77
+ProjectIteration=1
+
+WebTalk Summary
+----------------
+INFO:WebTalk:2 - WebTalk is enabled.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:5 - E:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Keyboard Projects/Final_Project_Keyboard_Working/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/14.1/ISE_DS/ISE/data/reports/webtalk_introduction.html

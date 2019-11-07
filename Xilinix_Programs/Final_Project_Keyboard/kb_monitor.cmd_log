@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "I:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Keyboard Projects/Final_Project_Keyboard/kb_monitor.xst" -ofn "I:/0_Homework Folder-1/Northern Illinois University/Summer 2012/ELE 430/Xilinx Programs/Z_Final Project/Keyboard Projects/Final_Project_Keyboard/kb_monitor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "kb_monitor.ngc" kb_monitor.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o kb_monitor_map.ncd kb_monitor.ngd kb_monitor.pcf 
+par -w -intstyle ise -ol high -t 1 kb_monitor_map.ncd kb_monitor.ncd kb_monitor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml kb_monitor.twx kb_monitor.ncd -o kb_monitor.twr kb_monitor.pcf 
+bitgen -intstyle ise -f kb_monitor.ut kb_monitor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "kb_monitor.ngc" kb_monitor.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o kb_monitor_map.ncd kb_monitor.ngd kb_monitor.pcf 
+par -w -intstyle ise -ol high -t 1 kb_monitor_map.ncd kb_monitor.ncd kb_monitor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml kb_monitor.twx kb_monitor.ncd -o kb_monitor.twr kb_monitor.pcf 
+bitgen -intstyle ise -f kb_monitor.ut kb_monitor.ncd 

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="FINAL_PROJECT.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ping_pong_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ping_pong_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ping_pong_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vga_game.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="vga_game.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="vga_game.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="vga_pong.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="vga_pong.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="vga_pong.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="vga_pong.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="vga_pong.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="vga_pong.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="vga_pong.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="vga_pong.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="vga_pong.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="vga_pong.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="vga_pong.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="vga_pong.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="vga_pong.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vga_pong.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="vga_pong.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="vga_pong.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="vga_pong.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="vga_pong.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="vga_pong.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="vga_pong.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="vga_pong.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="vga_pong.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="vga_pong.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="vga_pong_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="vga_pong_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="vga_pong_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="vga_pong_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="vga_pong_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="vga_pong_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="vga_pong_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="vga_pong_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="vga_pong_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="vga_pong_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="vga_pong_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="vga_pong_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="vga_pong_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="vga_pong_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1344468413" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1344468413">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1344470731" xil_pn:in_ck="-8245989666727084757" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1344470731">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ping_pong_tb.v"/>
+      <outfile xil_pn:name="vga_game.v"/>
+      <outfile xil_pn:name="vga_pong.v"/>
+      <outfile xil_pn:name="vga_screen.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1344468449" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6980167608985932627" xil_pn:start_ts="1344468449">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1344468449" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7368947591279324719" xil_pn:start_ts="1344468449">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1344468449" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-877628034637114192" xil_pn:start_ts="1344468449">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1344470731" xil_pn:in_ck="-8245989666727084757" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1344470731">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ping_pong_tb.v"/>
+      <outfile xil_pn:name="vga_game.v"/>
+      <outfile xil_pn:name="vga_pong.v"/>
+      <outfile xil_pn:name="vga_screen.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1344470736" xil_pn:in_ck="-8245989666727084757" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1931984280243512891" xil_pn:start_ts="1344470731">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1344470654" xil_pn:in_ck="-6934788320340250331" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4325602743358615170" xil_pn:start_ts="1344470654">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForced"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="ping_pong_tb_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1344447807" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1344447807">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1344447807" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8833642361062845322" xil_pn:start_ts="1344447807">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1344447807" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-877628034637114192" xil_pn:start_ts="1344447807">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1344447807" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1344447807">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1344447807" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-7556303835016883128" xil_pn:start_ts="1344447807">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1344447807" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1344447807">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1344447807" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="1065590080439710138" xil_pn:start_ts="1344447807">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1344466224" xil_pn:in_ck="-30744309927197711" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7924515314475462473" xil_pn:start_ts="1344466185">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="vga_pong.lso"/>
+      <outfile xil_pn:name="vga_pong.ngc"/>
+      <outfile xil_pn:name="vga_pong.ngr"/>
+      <outfile xil_pn:name="vga_pong.prj"/>
+      <outfile xil_pn:name="vga_pong.stx"/>
+      <outfile xil_pn:name="vga_pong.syr"/>
+      <outfile xil_pn:name="vga_pong.xst"/>
+      <outfile xil_pn:name="vga_pong_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1344456199" xil_pn:in_ck="185647328641562439" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784894306680715507" xil_pn:start_ts="1344456199">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1344466246" xil_pn:in_ck="-7999047992904787490" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="16710471029807240" xil_pn:start_ts="1344466224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="vga_pong.bld"/>
+      <outfile xil_pn:name="vga_pong.ngd"/>
+      <outfile xil_pn:name="vga_pong_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1344466255" xil_pn:in_ck="-7948505886391060673" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1344466246">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="vga_pong.pcf"/>
+      <outfile xil_pn:name="vga_pong_map.map"/>
+      <outfile xil_pn:name="vga_pong_map.mrp"/>
+      <outfile xil_pn:name="vga_pong_map.ncd"/>
+      <outfile xil_pn:name="vga_pong_map.ngm"/>
+      <outfile xil_pn:name="vga_pong_map.xrpt"/>
+      <outfile xil_pn:name="vga_pong_summary.xml"/>
+      <outfile xil_pn:name="vga_pong_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1344466290" xil_pn:in_ck="996835649247510712" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1344466255">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="vga_pong.ncd"/>
+      <outfile xil_pn:name="vga_pong.pad"/>
+      <outfile xil_pn:name="vga_pong.par"/>
+      <outfile xil_pn:name="vga_pong.ptwx"/>
+      <outfile xil_pn:name="vga_pong.unroutes"/>
+      <outfile xil_pn:name="vga_pong.xpi"/>
+      <outfile xil_pn:name="vga_pong_pad.csv"/>
+      <outfile xil_pn:name="vga_pong_pad.txt"/>
+      <outfile xil_pn:name="vga_pong_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1344466304" xil_pn:in_ck="6126361647955102324" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1344466290">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="vga_pong.bgn"/>
+      <outfile xil_pn:name="vga_pong.bit"/>
+      <outfile xil_pn:name="vga_pong.drc"/>
+      <outfile xil_pn:name="vga_pong.ut"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1344466400" xil_pn:in_ck="6126361647955089470" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1344466304">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1344466290" xil_pn:in_ck="3826680127506551099" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1344466284">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="vga_pong.twr"/>
+      <outfile xil_pn:name="vga_pong.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

@@ -1,0 +1,11 @@
+[Inputs]
+clk
+reset
+[Outputs]
+=led[7:0]=
+[BiDir]
+ps2d
+ps2c
+[ATTRIBUTES]
+VeriModel mouse_led
+

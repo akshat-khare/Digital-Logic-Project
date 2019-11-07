@@ -1,0 +1,810 @@
+Release 14.1 - xst P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Reading design: kb_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "kb_test.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "kb_test"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : kb_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "uart_tx.v" in library work
+Compiling verilog file "uart_rx.v" in library work
+Module <uart_tx> compiled
+Compiling verilog file "ps2_rx.v" in library work
+Module <uart_rx> compiled
+Compiling verilog file "mod_m_counter.v" in library work
+Module <ps2_rx> compiled
+Compiling verilog file "fifo.v" in library work
+Module <mod_m_counter> compiled
+Compiling verilog file "uart.v" in library work
+Module <fifo> compiled
+Compiling verilog file "key2ascii.v" in library work
+Module <uart> compiled
+Compiling verilog file "kb_code.v" in library work
+Module <key2ascii> compiled
+Compiling verilog file "kb_test.v" in library work
+Module <kb_code> compiled
+Module <kb_test> compiled
+No errors in compilation
+Analysis of file <"kb_test.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <kb_test> in library <work>.
+
+Analyzing hierarchy for module <kb_code> in library <work> with parameters.
+	BRK = "11110000"
+	W_SIZE = "00000000000000000000000000000010"
+	get_code = "1"
+	wait_brk = "0"
+
+Analyzing hierarchy for module <uart> in library <work> with parameters.
+	DBIT = "00000000000000000000000000001000"
+	DVSR = "00000000000000000000000010100011"
+	DVSR_BIT = "00000000000000000000000000001000"
+	FIFO_W = "00000000000000000000000000000101"
+	SB_TICK = "00000000000000000000000000010000"
+
+Analyzing hierarchy for module <key2ascii> in library <work>.
+
+Analyzing hierarchy for module <ps2_rx> in library <work> with parameters.
+	dps = "01"
+	idle = "00"
+	load = "10"
+
+Analyzing hierarchy for module <fifo> in library <work> with parameters.
+	B = "00000000000000000000000000001000"
+	W = "00000000000000000000000000000010"
+
+Analyzing hierarchy for module <mod_m_counter> in library <work> with parameters.
+	M = "00000000000000000000000010100011"
+	N = "00000000000000000000000000001000"
+
+Analyzing hierarchy for module <uart_rx> in library <work> with parameters.
+	DBIT = "00000000000000000000000000001000"
+	SB_TICK = "00000000000000000000000000010000"
+	data = "10"
+	idle = "00"
+	start = "01"
+	stop = "11"
+
+Analyzing hierarchy for module <fifo> in library <work> with parameters.
+	B = "00000000000000000000000000001000"
+	W = "00000000000000000000000000000101"
+
+Analyzing hierarchy for module <uart_tx> in library <work> with parameters.
+	DBIT = "00000000000000000000000000001000"
+	SB_TICK = "00000000000000000000000000010000"
+	data = "10"
+	idle = "00"
+	start = "01"
+	stop = "11"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <kb_test>.
+Module <kb_test> is correct for synthesis.
+ 
+Analyzing module <kb_code> in library <work>.
+	BRK = 8'b11110000
+	W_SIZE = 32'sb00000000000000000000000000000010
+	get_code = 1'b1
+	wait_brk = 1'b0
+Module <kb_code> is correct for synthesis.
+ 
+Analyzing module <ps2_rx> in library <work>.
+	dps = 2'b01
+	idle = 2'b00
+	load = 2'b10
+Module <ps2_rx> is correct for synthesis.
+ 
+Analyzing module <fifo.1> in library <work>.
+	B = 32'sb00000000000000000000000000001000
+	W = 32'sb00000000000000000000000000000010
+Module <fifo.1> is correct for synthesis.
+ 
+Analyzing module <uart> in library <work>.
+	DBIT = 32'sb00000000000000000000000000001000
+	DVSR = 32'sb00000000000000000000000010100011
+	DVSR_BIT = 32'sb00000000000000000000000000001000
+	FIFO_W = 32'sb00000000000000000000000000000101
+	SB_TICK = 32'sb00000000000000000000000000010000
+Module <uart> is correct for synthesis.
+ 
+Analyzing module <mod_m_counter> in library <work>.
+	M = 32'sb00000000000000000000000010100011
+	N = 32'sb00000000000000000000000000001000
+Module <mod_m_counter> is correct for synthesis.
+ 
+Analyzing module <uart_rx> in library <work>.
+	DBIT = 32'sb00000000000000000000000000001000
+	SB_TICK = 32'sb00000000000000000000000000010000
+	data = 2'b10
+	idle = 2'b00
+	start = 2'b01
+	stop = 2'b11
+Module <uart_rx> is correct for synthesis.
+ 
+Analyzing module <fifo.2> in library <work>.
+	B = 32'sb00000000000000000000000000001000
+	W = 32'sb00000000000000000000000000000101
+Module <fifo.2> is correct for synthesis.
+ 
+Analyzing module <uart_tx> in library <work>.
+	DBIT = 32'sb00000000000000000000000000001000
+	SB_TICK = 32'sb00000000000000000000000000010000
+	data = 2'b10
+	idle = 2'b00
+	start = 2'b01
+	stop = 2'b11
+Module <uart_tx> is correct for synthesis.
+ 
+Analyzing module <key2ascii> in library <work>.
+Module <key2ascii> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <key2ascii>.
+    Related source file is "key2ascii.v".
+Unit <key2ascii> synthesized.
+
+
+Synthesizing Unit <ps2_rx>.
+    Related source file is "ps2_rx.v".
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit register for signal <b_reg>.
+    Found 1-bit register for signal <f_ps2c_reg>.
+    Found 8-bit register for signal <filter_reg>.
+    Found 4-bit subtractor for signal <n_next$addsub0000> created at line 88.
+    Found 4-bit register for signal <n_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <ps2_rx> synthesized.
+
+
+Synthesizing Unit <fifo_1>.
+    Related source file is "fifo.v".
+WARNING:Xst:646 - Signal <w_ptr_succ> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r_ptr_succ> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4x8-bit dual-port RAM <Mram_array_reg> for signal <array_reg>.
+    Found 1-bit 4-to-1 multiplexer for signal <empty_next>.
+    Found 2-bit comparator equal for signal <empty_next$cmp_eq0000> created at line 68.
+    Found 1-bit register for signal <empty_reg>.
+    Found 1-bit 4-to-1 multiplexer for signal <full_next>.
+    Found 2-bit comparator equal for signal <full_next$cmp_eq0000> created at line 76.
+    Found 1-bit register for signal <full_reg>.
+    Found 2-bit register for signal <r_ptr_reg>.
+    Found 2-bit register for signal <w_ptr_reg>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   6 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <fifo_1> synthesized.
+
+
+Synthesizing Unit <mod_m_counter>.
+    Related source file is "mod_m_counter.v".
+    Found 8-bit adder for signal <r_next$addsub0000> created at line 26.
+    Found 8-bit register for signal <r_reg>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <mod_m_counter> synthesized.
+
+
+Synthesizing Unit <uart_rx>.
+    Related source file is "uart_rx.v".
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state_reg> of Case statement line 53 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state_reg> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:1799 - State 10 is never reached in FSM <state_reg>.
+INFO:Xst:1799 - State 01 is never reached in FSM <state_reg>.
+INFO:Xst:1799 - State 11 is never reached in FSM <state_reg>.
+    Found finite state machine <FSM_1> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 1                                              |
+    | Transitions        | 1                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <b_reg>.
+    Found 3-bit adder for signal <n_next$addsub0000> created at line 79.
+    Found 3-bit register for signal <n_reg>.
+    Found 4-bit adder for signal <s_next$share0000> created at line 53.
+    Found 4-bit register for signal <s_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <uart_rx> synthesized.
+
+
+Synthesizing Unit <fifo_2>.
+    Related source file is "fifo.v".
+WARNING:Xst:646 - Signal <w_ptr_succ> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r_ptr_succ> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32x8-bit dual-port RAM <Mram_array_reg> for signal <array_reg>.
+    Found 1-bit 4-to-1 multiplexer for signal <empty_next>.
+    Found 5-bit comparator equal for signal <empty_next$cmp_eq0000> created at line 68.
+    Found 1-bit register for signal <empty_reg>.
+    Found 1-bit 4-to-1 multiplexer for signal <full_next>.
+    Found 5-bit comparator equal for signal <full_next$cmp_eq0000> created at line 76.
+    Found 1-bit register for signal <full_reg>.
+    Found 5-bit register for signal <r_ptr_reg>.
+    Found 5-bit register for signal <w_ptr_reg>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <fifo_2> synthesized.
+
+
+Synthesizing Unit <uart_tx>.
+    Related source file is "uart_tx.v".
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state_reg> of Case statement line 58 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state_reg> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found finite state machine <FSM_2> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <b_reg>.
+    Found 3-bit adder for signal <n_next$addsub0000> created at line 93.
+    Found 3-bit register for signal <n_reg>.
+    Found 4-bit adder for signal <s_next$share0000> created at line 58.
+    Found 4-bit register for signal <s_reg>.
+    Found 1-bit register for signal <tx_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <uart_tx> synthesized.
+
+
+Synthesizing Unit <kb_code>.
+    Related source file is "kb_code.v".
+    Found 1-bit register for signal <state_reg>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <kb_code> synthesized.
+
+
+Synthesizing Unit <uart>.
+    Related source file is "uart.v".
+Unit <uart> synthesized.
+
+
+Synthesizing Unit <kb_test>.
+    Related source file is "kb_test.v".
+Unit <kb_test> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x8-bit dual-port RAM                                : 2
+ 4x8-bit dual-port RAM                                 : 1
+# Adders/Subtractors                                   : 12
+ 2-bit adder                                           : 2
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 4
+ 8-bit adder                                           : 1
+# Registers                                            : 25
+ 1-bit register                                        : 9
+ 11-bit register                                       : 1
+ 2-bit register                                        : 2
+ 3-bit register                                        : 2
+ 4-bit register                                        : 3
+ 5-bit register                                        : 4
+ 8-bit register                                        : 4
+# Comparators                                          : 6
+ 2-bit comparator equal                                : 2
+ 5-bit comparator equal                                : 4
+# Multiplexers                                         : 6
+ 1-bit 4-to-1 multiplexer                              : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <uart_unit/uart_tx_unit/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <uart_unit/uart_rx_unit/state_reg/FSM> on signal <state_reg[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | unreached
+ 10    | unreached
+ 11    | unreached
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <kb_code_unit/ps2_rx_unit/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+-------------------
+WARNING:Xst:1290 - Hierarchical block <uart_rx_unit> is unconnected in block <uart_unit>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fifo_rx_unit> is unconnected in block <uart_unit>.
+   It will be removed from the design.
+WARNING:Xst:2677 - Node <b_reg_0> of sequential type is unconnected in block <ps2_rx_unit>.
+
+Synthesizing (advanced) Unit <fifo_1>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_array_reg> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <w_ptr_reg>     |          |
+    |     diA            | connected to signal <w_data>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     addrB          | connected to signal <r_ptr_reg>     |          |
+    |     doB            | connected to signal <r_data>        |          |
+    -----------------------------------------------------------------------
+Unit <fifo_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fifo_2>.
+INFO:Xst:3217 - HDL ADVISOR - Register <b_reg> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_array_reg> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <w_ptr_reg>     |          |
+    |     diA            | connected to signal <w_data>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     addrB          | connected to signal <r_ptr_reg>     |          |
+    |     doB            | connected to signal <r_data>        |          |
+    -----------------------------------------------------------------------
+Unit <fifo_2> synthesized (advanced).
+WARNING:Xst:2677 - Node <b_reg_0> of sequential type is unconnected in block <ps2_rx>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# RAMs                                                 : 3
+ 32x8-bit dual-port distributed RAM                    : 2
+ 4x8-bit dual-port distributed RAM                     : 1
+# Adders/Subtractors                                   : 10
+ 2-bit adder                                           : 2
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 4
+ 8-bit adder                                           : 1
+# Registers                                            : 86
+ Flip-Flops                                            : 86
+# Comparators                                          : 6
+ 2-bit comparator equal                                : 2
+ 5-bit comparator equal                                : 4
+# Multiplexers                                         : 6
+ 1-bit 4-to-1 multiplexer                              : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <b_reg_0> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_1> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_2> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_3> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_4> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_5> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_6> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_7> (without init value) has a constant value of 0 in block <uart_rx>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <kb_test> ...
+
+Optimizing unit <ps2_rx> ...
+
+Optimizing unit <fifo_1> ...
+
+Optimizing unit <mod_m_counter> ...
+
+Optimizing unit <fifo_2> ...
+
+Optimizing unit <uart_tx> ...
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg16> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg15> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg14> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg13> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg12> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg11> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg10> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg9> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg8> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg7> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg6> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg5> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg4> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg3> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg2> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/Mram_array_reg1> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/empty_reg> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/full_reg> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/w_ptr_reg_4> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/w_ptr_reg_3> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/w_ptr_reg_2> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/w_ptr_reg_1> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/w_ptr_reg_0> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/r_ptr_reg_4> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/r_ptr_reg_3> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/r_ptr_reg_2> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/r_ptr_reg_1> of sequential type is unconnected in block <kb_test>.
+WARNING:Xst:2677 - Node <uart_unit/fifo_rx_unit/r_ptr_reg_0> of sequential type is unconnected in block <kb_test>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block kb_test, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : kb_test.ngr
+Top Level Output File Name         : kb_test
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 5
+
+Cell Usage :
+# BELS                             : 241
+#      GND                         : 1
+#      LUT2                        : 13
+#      LUT2_D                      : 4
+#      LUT2_L                      : 13
+#      LUT3                        : 32
+#      LUT3_D                      : 7
+#      LUT3_L                      : 7
+#      LUT4                        : 134
+#      LUT4_D                      : 8
+#      LUT4_L                      : 13
+#      MUXF5                       : 9
+# FlipFlops/Latches                : 70
+#      FDC                         : 67
+#      FDP                         : 3
+# RAMS                             : 24
+#      RAM16X1D                    : 24
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 3
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      129  out of   4656     2%  
+ Number of Slice Flip Flops:             70  out of   9312     0%  
+ Number of 4 input LUTs:                279  out of   9312     2%  
+    Number used as logic:               231
+    Number used as RAMs:                 48
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    232     2%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 94    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 70    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 7.072ns (Maximum Frequency: 141.397MHz)
+   Minimum input arrival time before clock: 2.495ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.072ns (frequency: 141.397MHz)
+  Total number of paths / destination ports: 3091 / 275
+-------------------------------------------------------------------------
+Delay:               7.072ns (Levels of Logic = 5)
+  Source:            uart_unit/baud_gen_unit/r_reg_3 (FF)
+  Destination:       uart_unit/fifo_tx_unit/r_ptr_reg_4 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: uart_unit/baud_gen_unit/r_reg_3 to uart_unit/fifo_tx_unit/r_ptr_reg_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.514   0.603  uart_unit/baud_gen_unit/r_reg_3 (uart_unit/baud_gen_unit/r_reg_3)
+     LUT4_D:I0->O          5   0.612   0.607  uart_unit/baud_gen_unit/r_next_cmp_eq000022 (uart_unit/baud_gen_unit/r_next_cmp_eq000022)
+     LUT2:I1->O            9   0.612   0.700  uart_unit/baud_gen_unit/r_next_cmp_eq000023 (uart_unit/tick)
+     LUT4_D:I3->O         13   0.612   0.866  uart_unit/uart_tx_unit/tx_done_tick1 (uart_unit/tx_done_tick)
+     LUT3_D:I2->O          3   0.612   0.454  uart_unit/fifo_tx_unit/r_ptr_next<0>21 (uart_unit/fifo_tx_unit/N22)
+     LUT4:I3->O            1   0.612   0.000  uart_unit/fifo_tx_unit/r_ptr_next<4>1 (uart_unit/fifo_tx_unit/r_ptr_next<4>)
+     FDC:D                     0.268          uart_unit/fifo_tx_unit/r_ptr_reg_4
+    ----------------------------------------
+    Total                      7.072ns (3.842ns logic, 3.230ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.495ns (Levels of Logic = 2)
+  Source:            ps2d (PAD)
+  Destination:       kb_code_unit/ps2_rx_unit/b_reg_10 (FF)
+  Destination Clock: clk rising
+
+  Data Path: ps2d to kb_code_unit/ps2_rx_unit/b_reg_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.509  ps2d_IBUF (ps2d_IBUF)
+     LUT4:I0->O            1   0.612   0.000  kb_code_unit/ps2_rx_unit/b_next<10>1 (kb_code_unit/ps2_rx_unit/b_next<10>)
+     FDC:D                     0.268          kb_code_unit/ps2_rx_unit/b_reg_10
+    ----------------------------------------
+    Total                      2.495ns (1.986ns logic, 0.509ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            uart_unit/uart_tx_unit/tx_reg (FF)
+  Destination:       tx (PAD)
+  Source Clock:      clk rising
+
+  Data Path: uart_unit/uart_tx_unit/tx_reg to tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.514   0.357  uart_unit/uart_tx_unit/tx_reg (uart_unit/uart_tx_unit/tx_reg)
+     OBUF:I->O                 3.169          tx_OBUF (tx)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.80 secs
+ 
+--> 
+
+Total memory usage is 161632 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   44 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

@@ -1,0 +1,72 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Tue Jan 26 02:04:02 2016
+| Host         : Tuandzr-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_drc
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+           Max violations: <unlimited>
+         Violations found: 5
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+IOCS-1#1 Warning
+IOB clock sharing  
+IOs segout[7], segout[6] placed at V7, U7 connects to flops which are clocked by Inst_x47segdriver/n_0_segout_reg[7]_i_2, Inst_x47segdriver/p_6_out.  Pushing these flops into IOB may cause PAR to fail because the clock route is shared between adjacent (differential pair) IOs.  If there are only two clocks packing them in different BELs might fix the problem, like INST IOB1_flop = BEL FF1 and INST IOB2_flop = BEL FF2.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Inst_x47segdriver/fg_reg[2]_i_2 is driving clock pin of 3 cells. This could lead to large hold time violations. First few involved cells are:
+    Inst_x47segdriver/fg_reg[0] {LDCE}
+    Inst_x47segdriver/fg_reg[1] {LDCE}
+    Inst_x47segdriver/fg_reg[2] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Inst_x47segdriver/segout_reg[6]_i_2 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    Inst_x47segdriver/segout_reg[0] {LDCE}
+    Inst_x47segdriver/segout_reg[1] {LDCE}
+    Inst_x47segdriver/segout_reg[2] {LDCE}
+    Inst_x47segdriver/segout_reg[3] {LDCE}
+    Inst_x47segdriver/segout_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Inst_x47segdriver/segout_reg[7]_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    Inst_x47segdriver/segout_reg[7] {LDCE}
+
+Related violations: <none>
+
+

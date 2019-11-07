@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri May 13 10:52:15 2016
+# Process ID: 5420
+# Log file: E:/Vavidoprj/chuot/vivado.log
+# Journal file: E:/Vavidoprj/chuot\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Vavidoprj/chuot/chuot.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 650.164 ; gain = 102.500
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 13 10:53:39 2016...

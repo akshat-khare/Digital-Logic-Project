@@ -1,0 +1,24 @@
+#Example User Constraints File (UCF)
+#####################################################
+### SPARTAN-3E STARTER KIT BOARD CONSTRAINTS FILE
+#####################################################
+# ==== Clock inputs (CLK) ====
+NET "clk" LOC = "C9" | IOSTANDARD = LVCMOS33 ;
+# Define clock period for 50 MHz oscillator (40%/60% duty-cycle)
+NET "clk" PERIOD = 20.0ns HIGH 40%;
+# ==== PS/2 Mouse/Keyboard Port (PS2) ====
+NET "ps2c" LOC = "G14" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "ps2d" LOC = "G13" | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+# ==== Pushbuttons (BTN) ====
+NET "reset" LOC = "D18" | IOSTANDARD = LVTTL | PULLDOWN ; #WEST
+# ==== Discrete LEDs (LED) ====
+# These are shared connections with the FX2 connector
+NET "led<0>" LOC = "F12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "led<1>" LOC = "E12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "led<2>" LOC = "E11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "led<3>" LOC = "F11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "led<4>" LOC = "C11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "led<5>" LOC = "D11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "led<6>" LOC = "E9" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "led<7>" LOC = "F9" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+

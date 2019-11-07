@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.15xf on Wed Aug 08 17:50:52 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "RESET" LOCATE = SITE "K17" LEVEL 1;
+COMP "hsync" LOCATE = SITE "F15" LEVEL 1;
+COMP "vsync" LOCATE = SITE "F14" LEVEL 1;
+COMP "btn<0>" LOCATE = SITE "H13" LEVEL 1;
+COMP "btn<1>" LOCATE = SITE "V4" LEVEL 1;
+COMP "CLK_50MHZ" LOCATE = SITE "C9" LEVEL 1;
+COMP "rgb<0>" LOCATE = SITE "G15" LEVEL 1;
+COMP "rgb<1>" LOCATE = SITE "H15" LEVEL 1;
+COMP "rgb<2>" LOCATE = SITE "H14" LEVEL 1;
+NET "CLK_50MHZ_BUFGP/IBUFG" BEL "CLK_50MHZ_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+NET "CLK_50MHZ_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+SCHEMATIC END;
+

@@ -1,0 +1,3 @@
+verilog work "vga_screen.v"
+verilog work "vga_game.v"
+verilog work "vga_pong.v"

@@ -1,0 +1,5 @@
+verilog isim_temp "vga_screen.v"
+verilog isim_temp "vga_game.v"
+verilog isim_temp "vga_pong.v"
+verilog isim_temp "ping_pong_tb.v"
+verilog isim_temp "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"

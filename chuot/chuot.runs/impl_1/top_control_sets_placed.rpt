@@ -1,0 +1,79 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Tue Jan 26 02:04:13 2016
+| Host         : Tuandzr-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    26 |
+| Minimum Number of register sites lost to control set restrictions |    75 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              53 |           31 |
+| No           | No                    | Yes                    |              16 |           11 |
+| No           | Yes                   | No                     |             121 |           36 |
+| Yes          | No                    | No                     |              52 |           22 |
+| Yes          | No                    | Yes                    |              23 |           12 |
+| Yes          | Yes                   | No                     |              12 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------+--------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|               Clock Signal               |                   Enable Signal                  |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++------------------------------------------+--------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|  Inst_x47segdriver/n_0_segout_reg[7]_i_2 |                                                  |                                                               |                1 |              1 |
+|  Inst_x47segdriver/n_0_fg_reg[2]_i_2     |                                                  |                                                               |                1 |              3 |
+|  clk100_IBUF_BUFG                        |                                                  | Inst_MouseCtl/Inst_Ps2Interface/clk_inter0                    |                1 |              4 |
+|  clk100_IBUF_BUFG                        |                                                  | Inst_MouseCtl/Inst_Ps2Interface/data_inter0                   |                1 |              4 |
+|  clk100_IBUF_BUFG                        | Inst_MouseCtl/Inst_Ps2Interface/E[0]             |                                                               |                2 |              4 |
+|  clk100_IBUF_BUFG                        | Inst_MouseCtl/Inst_Ps2Interface/shift_frame      | Inst_MouseCtl/Inst_Ps2Interface/reset_bit_count               |                1 |              4 |
+|  clk100_IBUF_BUFG                        |                                                  | Inst_MouseCtl/Inst_Ps2Interface/n_0_delay_100us_count[13]_i_1 |                3 |              5 |
+|  clk100_IBUF_BUFG                        |                                                  | Inst_MouseCtl/Inst_Ps2Interface/n_0_delay_20us_count[5]_i_1   |                1 |              5 |
+|  clk100_IBUF_BUFG                        |                                                  | Inst_MouseCtl/Inst_Ps2Interface/n_0_delay_20us_count[10]_i_1  |                3 |              6 |
+|  Inst_x47segdriver/p_6_out[6]            |                                                  |                                                               |                5 |              7 |
+|  clk100_IBUF_BUFG                        |                                                  | Inst_MouseCtl/Inst_Ps2Interface/n_0_delay_63clk_count[6]_i_1  |                3 |              7 |
+|  clk100_IBUF_BUFG                        | Inst_MouseCtl/Inst_Ps2Interface/O1               |                                                               |                6 |              7 |
+|  clk100_IBUF_BUFG                        | Inst_MouseCtl/Inst_Ps2Interface/O6               | rst_IBUF                                                      |                5 |              7 |
+|  clk100_IBUF_BUFG                        | Inst_MouseCtl/n_0_tx_data[7]_i_2                 | Inst_MouseCtl/n_0_tx_data[7]_i_1                              |                3 |              8 |
+|  clk100_IBUF_BUFG                        | Inst_MouseCtl/Inst_Ps2Interface/load_rx_data     |                                                               |                2 |              8 |
+|  clk100_IBUF_BUFG                        | Inst_MouseCtl/Inst_Ps2Interface/O5[0]            | rst_IBUF                                                      |                3 |              8 |
+|  clk100_IBUF_BUFG                        | Inst_MouseCtl/Inst_Ps2Interface/O9[0]            | rst_IBUF                                                      |                4 |              8 |
+|  clk100_IBUF_BUFG                        |                                                  | Inst_MouseCtl/Inst_Ps2Interface/n_0_delay_100us_count[12]_i_1 |                3 |              9 |
+|  clk100_IBUF_BUFG                        | Inst_MouseCtl/Inst_Ps2Interface/n_0_frame[9]_i_1 |                                                               |                3 |             10 |
+|  clk100_IBUF_BUFG                        | Inst_MouseCtl/n_0_y_new_reg                      |                                                               |                4 |             11 |
+|  clk100_IBUF_BUFG                        | Inst_MouseCtl/n_0_x_new_reg                      |                                                               |                5 |             12 |
+|  clk100_IBUF_BUFG                        |                                                  | rst_IBUF                                                      |               11 |             16 |
+|  clk100_IBUF_BUFG                        |                                                  | Inst_MouseCtl/reset_timeout_cnt                               |                6 |             24 |
+|  clk100_IBUF_BUFG                        |                                                  | Inst_MouseCtl/reset_periodic_check_cnt                        |                7 |             26 |
+|  clk100_IBUF_BUFG                        |                                                  | Inst_x47segdriver/n_0_count[31]_i_1                           |                8 |             31 |
+|  clk100_IBUF_BUFG                        |                                                  |                                                               |               24 |             42 |
++------------------------------------------+--------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+
+
